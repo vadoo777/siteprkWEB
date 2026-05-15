@@ -1,0 +1,1355 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KUGOO - Купить самокаты</title>
+    <link rel="stylesheet" href="site.css">
+  </head>
+  <body>
+    
+    <!-- App Banner (Mobile/Tablet Only) -->
+    <div class="app-banner">
+      <div class="container banner-inner">
+        <div class="banner-left">
+          <div class="app-icon-placeholder">
+            <img src="src/icons/logo.png" alt="App Icon">
+          </div>
+          <div class="banner-text">
+            <div class="banner-title">Открыть в приложении</div>
+            <div class="banner-stats">
+              <span class="stars">★★★★★</span>
+              <span class="stats-count">2K</span>
+            </div>
+          </div>
+        </div>
+        <button class="banner-btn">Открыть</button>
+      </div>
+    </div>
+
+    <input type="checkbox" id="menu-toggle" class="menu-checkbox" hidden>
+
+    <header>
+      <!-- Top Tier -->
+      <div class="top-bar">
+        <div class="container top-bar-inner">
+          <nav class="top-links">
+            <a href="#">Сервис</a>
+            <a href="#">Сотрудничество</a>
+            <a href="#">Заказать звонок</a>
+          </nav>
+          <div class="top-right">
+            <div class="social-icons">
+              <a href="#"><img src="src/icons/telegram.png" alt="Telegram"></a>
+              <a href="#"><img src="src/icons/whatsapp.png" alt="Whatsapp"></a>
+              <a href="#"><img src="src/icons/viber.png" alt="Viber"></a>
+            </div>
+            <div class="phone-wrapper phone-dropdown-trigger">
+              <span>+7 (800) 505-54-61</span>
+              <div class="plus-circle">
+                <img src="src/icons/plus.png" alt="Plus">
+              </div>
+              
+              <div class="contact-dropdown">
+                <div class="contact-section">
+                  <div class="contact-label">Сервисный центр</div>
+                  <div class="contact-phone">+ 7 (499) 350 76 92</div>
+                </div>
+                <div class="contact-section">
+                  <div class="contact-label">Оптовый отдел</div>
+                  <div class="contact-phone">+ 7 (499) 281-64-52</div>
+                  <div class="contact-hours">пн-сб 10:00 - 19:00</div>
+                </div>
+                <div class="contact-section">
+                  <div class="contact-label">Отдел рекламаций и претензий</div>
+                  <div class="contact-phone">+ 7 (499) 350-76-92</div>
+                  <div class="contact-hours">ср-вс 10:00 до 19:00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle Tier -->
+      <div class="container middle-bar">
+        <div class="logo">KUGOO</div>
+        
+        <div class="catalog-wrapper desktop-only">
+          <button class="catalog-btn">
+            <img src="src/icons/burger.png" alt="Catalog">
+            <span>Каталог</span>
+          </button>
+
+          <div class="megamenu">
+            <div class="megamenu-inner">
+              <div class="megamenu-left">
+                <a href="#" class="megamenu-category active">
+                  <img src="src/icons/electric-scooter.png" alt="Scooter">
+                  Электросамокаты
+                </a>
+                <a href="#" class="megamenu-category">
+                  <img src="src/icons/scooter-2.png" alt="Moped">
+                  Электроскутеры
+                </a>
+                <a href="#" class="megamenu-category">
+                  <img src="src/icons/mountain-bike.png" alt="Bike">
+                  Электровелосипеды
+                </a>
+                <a href="#" class="megamenu-category">
+                  <img src="src/icons/vacuum-cleaner.png" alt="Vacuum">
+                  Робот-пылесосы
+                </a>
+                <a href="#" class="megamenu-category">
+                  <img src="src/icons/weighing-scale.png" alt="Scales">
+                  Весы
+                </a>
+              </div>
+              <div class="megamenu-content">
+                <div class="megamenu-col">
+                  <h4>Особенности</h4>
+                  <ul>
+                    <li><a href="#">Внедорожный</a></li>
+                    <li><a href="#">Городской</a></li>
+                    <li><a href="#">Зимний</a></li>
+                    <li><a href="#">С сиденьем</a></li>
+                    <li><a href="#">Без сиденья</a></li>
+                  </ul>
+                </div>
+                <div class="megamenu-col">
+                  <h4>Для кого</h4>
+                  <ul>
+                    <li><a href="#">Для детей и подростков</a></li>
+                    <li><a href="#">Для взрослых</a></li>
+                    <li><a href="#">Для пенсионеров</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-field desktop-only">
+          <div class="search-select">
+            <span>Везде</span>
+            <img src="src/icons/down.png" alt="Select">
+          </div>
+          <input type="text" placeholder="Искать самокат KUGOO" class="search-input">
+          <button class="search-submit">
+            <img src="src/icons/search.png" alt="Search">
+          </button>
+        </div>
+
+        <div class="user-icons desktop-only">
+          <a href="#" class="icon-button">
+            <img src="src/icons/vesy.png" alt="Compare">
+          </a>
+          <a href="#" class="icon-button">
+            <img src="src/icons/heart.png" alt="Wishlist">
+          </a>
+          <a href="#" class="icon-button">
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <div style="position: relative;">
+                <img src="src/icons/shopping-cart.png" alt="Cart">
+                <span class="cart-count">0</span>
+              </div>
+              <span class="cart-label">Корзина</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="mobile-row">
+          <div class="mobile-actions">
+            <a href="#" class="mobile-phone">
+              <img src="src/icons/call-mob.png" alt="Call">
+            </a>
+            <label for="menu-toggle" class="burger-trigger">
+              <span class="burger-lines">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span class="close-icon">
+                <img src="src/icons/close-mob.png" alt="Close">
+              </span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mobile-search">
+        <div class="search-field">
+          <input type="text" placeholder="Искать самокат KUGOO" class="search-input">
+          <button class="search-submit">
+            <img src="src/icons/search-mob.png" alt="Search">
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-menu-overlay">
+        <div class="container">
+          <div class="menu-nav">
+            <a href="#" class="menu-item"> О магазине</a>
+            <a href="#" class="menu-item menu-item-with-badge">
+              <span>Доставка и оплата</span>
+              <span class="tag-badge">Доступна рассрочка</span>
+            </a>
+            <a href="#" class="menu-item">Тест-драйв</a>
+            <a href="#" class="menu-item">Блог</a>
+            <a href="#" class="menu-item">Контакты</a>
+            <a href="#" class="menu-item menu-item-promo">
+              <span>Акции</span>
+              <span class="percent">%</span>
+            </a>
+          </div>
+          <div class="footer-social-row">
+            <a href="#"><img src="src/icons/telegram-mob.png" alt="Tg"></a>
+            <a href="#"><img src="src/icons/whatsapp-mob.png" alt="Wa"></a>
+            <a href="#"><img src="src/icons/viber-mob.png" alt="Vb"></a>
+          </div>
+        </div>
+      </div>
+
+      <nav class="bottom-nav desktop-only">
+        <div class="container nav-scroll">
+          <a href="#" class="nav-link"> О магазине</a>
+          <a href="#" class="nav-link">
+            <span>Доставка и оплата</span>
+            <span class="tag-badge">Доступна рассрочка</span>
+          </a>
+          <a href="#" class="nav-link">Тест-драйв</a>
+          <a href="#" class="nav-link">Блог</a>
+          <a href="#" class="nav-link">Контакты</a>
+          <a href="#" class="nav-link">
+            <span>Акции</span>
+            <span class="percent">%</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container hero-section">
+      <!-- Hero Slider -->
+      <div class="hero-slider">
+        <div class="hero-bg-text">KIRIN</div>
+        <div class="hero-slide">
+          <div class="hero-content">
+            <span class="badge-new">Новинка</span>
+            <h1 class="hero-title">Электросамокаты KUGOO KIRIN<br>от официального дилера</h1>
+            <p class="hero-subtitle">с бесплатной доставкой по РФ от 1 дня</p>
+            <a href="#" class="btn-primary">Перейти в каталог</a>
+          </div>
+          
+          <div class="hero-image-wrap">
+            <!-- Main Hero Image Component (Placeholder) -->
+            <img src="src/image/samokat.png" alt="Kugoo Kirin Scooter" class="hero-scooter-img">
+            
+            <!-- Floating Test Drive Info -->
+            <div class="test-drive-tag">
+              <div class="tag-inner">
+                <!-- Icon: Lightning -->
+                <img src="src/icons/molnia.png" alt="L" class="lightning-icon">
+                <span>Тест-драйв и обучение</span>
+                <span class="badge-free">Бесплатно</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slider Navigation (Desktop Only) -->
+          <div class="hero-nav desktop-only">
+            <button class="nav-arrow prev">
+              <img src="src/icons/levo.png" alt="<">
+            </button>
+            <div class="nav-info">
+              <span class="current">1</span>
+              <span class="separator">—</span>
+              <span class="total">5</span>
+            </div>
+            <button class="nav-arrow next">
+              <img src="src/icons/pravo.png" alt=">">
+            </button>
+          </div>
+
+          <!-- Mobile Pagination Dots -->
+          <div class="mobile-pagination">
+            <span class="slider-dot active"></span>
+            <span class="slider-dot"></span>
+            <span class="slider-dot"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Features -->
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Гарантия 1 год</h3>
+          <p>на весь ассортимент</p>
+        </div>
+        <div class="feature-card">
+          <h3>Рассрочка</h3>
+          <p>от 6 месяцев</p>
+        </div>
+        <div class="feature-card">
+          <h3>Подарки</h3>
+          <p>и бонусы к покупкам</p>
+        </div>
+        <div class="yandex-card">
+          <div class="y-logo">
+            <!-- Yandex Red Logo Placeholder -->
+            <img src="src/icons/yandex.png" alt="Я">
+          </div>
+          <div class="y-info">
+            <span class="y-label">Яндекс отзывы</span>
+            <div class="y-rating">
+              <span class="star">★</span>
+              <span class="val">4,9</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="product-grid-section">
+        <div class="container">
+          <!-- Header -->
+          <div class="section-header">
+            <h2 class="section-title">ЭЛЕКТРОСАМОКАТЫ</h2>
+            <div class="section-filters">
+              <button class="filter-btn active">Хиты продаж</button>
+              <button class="filter-btn">Для города</button>
+              <button class="filter-btn">Для взрослых</button>
+              <button class="filter-btn">Для детей</button>
+            </div>
+          </div>
+
+          <!-- Grid -->
+          <div class="product-grid">
+            
+            <!-- Card 1 -->
+            <div class="product-card">
+              <div class="card-image-wrap">
+                <div class="badge hit">Хит</div>
+                <button class="compare-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg>
+                </button>
+                <button class="card-nav-arrow prev">&lt;</button>
+                <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+                <button class="card-nav-arrow next">&gt;</button>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Kugoo Kirin M4</h3>
+                <div class="card-specs">
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+                </div>
+                <div class="price-row">
+                  <div class="price-block">
+                    <span class="old-price">39 900 ₽</span>
+                    <span class="new-price">29 900 ₽</span>
+                  </div>
+                  <div class="action-buttons">
+                    <button class="circle-btn">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    </button>
+                    <button class="circle-btn">
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </button>
+                  </div>
+                </div>
+                <button class="btn-buy-1click">Купить в 1 клик</button>
+              </div>
+            </div>
+
+            <!-- Card 2 (New) -->
+            <div class="product-card">
+              <div class="card-image-wrap">
+                <div class="badge new">Новинка</div>
+                <button class="compare-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg></button>
+                <button class="card-nav-arrow prev">&lt;</button>
+                <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+                <button class="card-nav-arrow next">&gt;</button>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Kugoo Kirin M4</h3>
+                <div class="card-specs">
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+                </div>
+                <div class="price-row">
+                  <div class="price-block"><span class="old-price">39 900 ₽</span><span class="new-price">29 900 ₽</span></div>
+                  <div class="action-buttons">
+                    <button class="circle-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+                    <button class="circle-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+                  </div>
+                </div>
+                <button class="btn-buy-1click">Купить в 1 клик</button>
+              </div>
+            </div>
+
+            <!-- Card 3 (Hit) -->
+            <div class="product-card">
+              <div class="card-image-wrap">
+                <div class="badge hit">Хит</div>
+                <button class="compare-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg></button>
+                <button class="card-nav-arrow prev">&lt;</button>
+                <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+                <button class="card-nav-arrow next">&gt;</button>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Kugoo Kirin M4</h3>
+                <div class="card-specs">
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+                </div>
+                <div class="price-row">
+                  <div class="price-block"><span class="old-price">39 900 ₽</span><span class="new-price">29 900 ₽</span></div>
+                  <div class="action-buttons">
+                    <button class="circle-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+                    <button class="circle-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+                  </div>
+                </div>
+                <button class="btn-buy-1click">Купить в 1 клик</button>
+              </div>
+            </div>
+
+            <!-- Card 4 (New) -->
+            <div class="product-card">
+              <div class="card-image-wrap">
+                <div class="badge new">Новинка</div>
+                <button class="compare-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg></button>
+                <button class="card-nav-arrow prev">&lt;</button>
+                <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+                <button class="card-nav-arrow next">&gt;</button>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Kugoo Kirin M4</h3>
+                <div class="card-specs">
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+                </div>
+                <div class="price-row">
+                  <div class="price-block"><span class="old-price">39 900 ₽</span><span class="new-price">29 900 ₽</span></div>
+                  <div class="action-buttons">
+                    <button class="circle-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+                    <button class="circle-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+                  </div>
+                </div>
+                <button class="btn-buy-1click">Купить в 1 клик</button>
+              </div>
+            </div>
+
+            <!-- Row 2 (Same structure) -->
+            <div class="product-card">
+              <div class="card-image-wrap">
+                <div class="badge hit">Хит</div>
+                <button class="compare-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg></button>
+                <button class="card-nav-arrow prev">&lt;</button>
+                <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+                <button class="card-nav-arrow next">&gt;</button>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Kugoo Kirin M4</h3>
+                <div class="card-specs">
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+                </div>
+                <div class="price-row">
+                  <div class="price-block"><span class="old-price">39 900 ₽</span><span class="new-price">29 900 ₽</span></div>
+                  <div class="action-buttons">
+                    <button class="circle-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+                    <button class="circle-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+                  </div>
+                </div>
+                <button class="btn-buy-1click">Купить в 1 клик</button>
+              </div>
+            </div>
+            
+            <div class="product-card">
+              <div class="card-image-wrap">
+                <div class="badge new">Новинка</div>
+                <button class="compare-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg></button>
+                <button class="card-nav-arrow prev">&lt;</button>
+                <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+                <button class="card-nav-arrow next">&gt;</button>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Kugoo Kirin M4</h3>
+                <div class="card-specs">
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+                </div>
+                <div class="price-row">
+                  <div class="price-block"><span class="old-price">39 900 ₽</span><span class="new-price">29 900 ₽</span></div>
+                  <div class="action-buttons">
+                    <button class="circle-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+                    <button class="circle-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+                  </div>
+                </div>
+                <button class="btn-buy-1click">Купить в 1 клик</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="card-image-wrap">
+                <div class="badge hit">Хит</div>
+                <button class="compare-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg></button>
+                <button class="card-nav-arrow prev">&lt;</button>
+                <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+                <button class="card-nav-arrow next">&gt;</button>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Kugoo Kirin M4</h3>
+                <div class="card-specs">
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+                </div>
+                <div class="price-row">
+                  <div class="price-block"><span class="old-price">39 900 ₽</span><span class="new-price">29 900 ₽</span></div>
+                  <div class="action-buttons">
+                    <button class="circle-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+                    <button class="circle-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+                  </div>
+                </div>
+                <button class="btn-buy-1click">Купить в 1 клик</button>
+              </div>
+            </div>
+
+            <div class="product-card">
+              <div class="card-image-wrap">
+                <div class="badge new">Новинка</div>
+                <button class="compare-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg></button>
+                <button class="card-nav-arrow prev">&lt;</button>
+                <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+                <button class="card-nav-arrow next">&gt;</button>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Kugoo Kirin M4</h3>
+                <div class="card-specs">
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+                  <div class="spec-item"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+                </div>
+                <div class="price-row">
+                  <div class="price-block"><span class="old-price">39 900 ₽</span><span class="new-price">29 900 ₽</span></div>
+                  <div class="action-buttons">
+                    <button class="circle-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+                    <button class="circle-btn"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+                  </div>
+                </div>
+                <button class="btn-buy-1click">Купить в 1 клик</button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bottom Button -->
+          <div class="show-more-wrapper">
+            <button class="btn-show-all">Смотреть все</button>
+          </div>
+
+        </div>
+      </div>
+      <!-- INFO CARDS - Desktop Only -->
+      <div class="info-cards-section">
+        <div class="container">
+          <div class="info-cards-wrapper">
+            
+            <!-- Card 1: Подбор модели -->
+            <div class="info-card">
+              <div class="info-card-content">
+                <h3 class="info-card-title">ПОДБОР МОДЕЛИ ЭЛЕКТРОСАМОКАТА</h3>
+                <p class="info-card-desc">Пройдите тест и выберите электросамокат по своим критериям</p>
+                <a href="#" class="info-card-link">Подобрать модель &rarr;</a>
+              </div>
+              
+              <!-- Синий круг -->
+              <div class="info-card-shape"></div>
+              
+              <!-- Картинка -->
+              <div class="info-card-image">
+                <!-- Вставь сюда свою картинку самоката -->
+                <img src="src/image/koleso.png" alt="Scooter Wheel">
+              </div>
+            </div>
+
+            <!-- Card 2: Сервис -->
+            <div class="info-card">
+              <div class="info-card-content">
+                <h3 class="info-card-title">СЕРВИСНОЕ ОБСЛУЖИВАНИЕ</h3>
+                <p class="info-card-desc">Крупнейший сервисный центр в России для продуктов Kugoo</p>
+                <a href="#" class="info-card-link">Подобрать модель &rarr;</a>
+              </div>
+              
+              <!-- Синий круг -->
+              <div class="info-card-shape"></div>
+              
+              <!-- Картинка -->
+              <div class="info-card-image">
+                 <!-- Вставь сюда свою картинку с девушкой -->
+                <img src="src/image/woman.png" alt="Service Woman">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- PROMO BANNER - Desktop Only -->
+      <div class="promo-banner-block">
+        <div class="promo-banner-inner">
+          
+          <!-- Картинка слева -->
+          <div class="promo-banner-image">
+            <!-- Вставь сюда свою картинку (Дрон + Коробка) -->
+            <img src="src/image/dron.png" alt="Promo Drone">
+          </div>
+
+          <!-- Текст справа -->
+          <div class="promo-banner-content">
+            <div class="promo-badge">Акция</div>
+            <h2 class="promo-title">
+              БЕСПЛАТНАЯ ДОСТАВКА<br>
+              ЭЛЕКТРОСАМОКАТОВ<br>
+              ПО РОССИИ ДО 01.09
+            </h2>
+            <button class="promo-btn">Подробнее</button>
+          </div>
+
+        </div>
+      </div>
+      <!-- POPULAR CATEGORIES - Desktop Only -->
+      <div class="popular-categories-block">
+        <div class="container">
+          <div class="popular-categories-header">
+            <h2 class="popular-categories-title">ПОПУЛЯРНЫЕ КАТЕГОРИИ</h2>
+            
+            <!-- Manager Card -->
+            <div class="manager-card">
+              <div class="manager-avatar">
+                <img src="src/icons/baba.png" alt="Manager">
+              </div>
+              <div class="manager-info">
+                <div class="manager-text">Менеджер ответит на любой ваш вопрос о продуктах Kugoo</div>
+                <div class="manager-link">Задать вопрос</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="categories-grid">
+            <!-- Card 1 -->
+            <div class="category-card">
+              <img src="src/image/pylesos.png" alt="Робот-пылесосы">
+              <div class="category-overlay">
+                <div class="category-name">Робот-пылесосы</div>
+                <div class="category-price">от 29 900 ₽</div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="category-card">
+              <img src="src/image/velosiped.png" alt="Электровелосипеды">
+              <div class="category-overlay">
+                <div class="category-name">Электровелосипеды</div>
+                <div class="category-price">от 29 900 ₽</div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="category-card">
+              <img src="src/image/vesys.png" alt="Весы">
+              <div class="category-overlay">
+                <div class="category-name">Весы</div>
+                <div class="category-price">от 29 900 ₽</div>
+              </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="category-card">
+              <img src="src/image/pylesos.png" alt="Робот-пылесосы">
+              <div class="category-overlay">
+                <div class="category-name">Робот-пылесосы</div>
+                <div class="category-price">от 29 900 ₽</div>
+              </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="category-card">
+              <img src="src/image/velosiped.png" alt="Весы">
+              <div class="category-overlay">
+                <div class="category-name">Весы</div>
+                <div class="category-price">от 29 900 ₽</div>
+              </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="category-card">
+              <img src="src/image/pylesos.png" alt="Робот-пылесосы">
+              <div class="category-overlay">
+                <div class="category-name">Робот-пылесосы</div>
+                <div class="category-price">от 29 900 ₽</div>
+              </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="category-card">
+              <img src="src/image/velosiped.png" alt="Электровелосипеды">
+              <div class="category-overlay">
+                <div class="category-name">Электровелосипеды</div>
+                <div class="category-price">от 29 900 ₽</div>
+              </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="category-card">
+              <img src="src/image/vesys.png" alt="Весы">
+              <div class="category-overlay">
+                <div class="category-name">Весы</div>
+                <div class="category-price">от 29 900 ₽</div>
+              </div>
+            </div>
+          </div>
+
+          <button class="show-all-btn">Смотреть все</button>
+        </div>
+      </div>
+      <!-- DEALER INFO - Desktop Only -->
+      <div class="dealer-section">
+        <div class="container">
+          <div class="dealer-inner">
+            
+            <!-- Левая колонка с картинкой -->
+            <div class="dealer-image-wrapper">
+              <img src="src/image/ludi.png" alt="People on Scooter">
+              
+              <!-- Карточка поверх картинки -->
+              <div class="dealer-overlay-card">
+                <div class="overlay-title">Тест-драйв в Москве</div>
+                <div class="overlay-text">Оцените все преимущества самокатов лично</div>
+                <a href="#" class="overlay-btn">
+                  Подробнее 
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Правая колонка с текстом -->
+            <div class="dealer-content">
+              <h2 class="dealer-title">KUGOO-RUSSIA — ПЕРВЫЙ ОФИЦИАЛЬНЫЙ ДИЛЕР KUGOO KIRIN В РОССИИ</h2>
+              <p class="dealer-description">
+                Наша цель предоставить полный ассортимент современной продукции Kugoo Kirin, которая улучшает и упрощает жизнь. Стремимся подарить комфорт и эмоции, поэтому помогаем с выбором и внимательно относимся к сервисному обслуживанию.
+              </p>
+
+              <div class="benefits-box">
+                <div class="benefits-header">Специализируемся исключительно на бренде Kugoo, поэтому вы получите:</div>
+                <ul class="benefits-list">
+                  <li><span class="bullet-arrow">◄</span> цены от завода-изготовителя Jilong</li>
+                  <li><span class="bullet-arrow">◄</span> бесплатный тест-драйв самокатов</li>
+                  <li><span class="bullet-arrow">◄</span> фирменную гарантию 1 год</li>
+                  <li><span class="bullet-arrow">◄</span> ремонт и обслуживание от 1 дня в собственном сервисном центре</li>
+                  <li><span class="bullet-arrow">◄</span> более 1 000 запчастей и аксессуаров в наличии</li>
+                </ul>
+                <a href="#" class="certificate-link">Смотреть сертификат</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- ADVANTAGES SECTION - Desktop Only -->
+      <div class="advantages-section">
+        <div class="container">
+          
+          <div class="advantages-header">
+            <h2 class="advantages-title">
+              Предлагаем самые выгодные цены<br>
+              на продукты Kugoo за счет прямых поставок
+            </h2>
+            <p class="advantages-subtitle">и заботимся об удобстве покупателей</p>
+            
+            <div class="advantages-tabs">
+              <button class="adv-tab-btn active">Интернет-магазин</button>
+              <button class="adv-tab-btn">Сервисный центр</button>
+            </div>
+          </div>
+
+          <div class="advantages-grid">
+            
+            <!-- Card 1 -->
+            <div class="adv-card">
+              <div class="adv-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              </div>
+              <div class="adv-card-title">X товаров в каталоге</div>
+              <p class="adv-card-text">Выбирайте товар, который подходит по цене и характеристикам. Если товара нет в наличии — мы сообщим вам о его поступлении.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="adv-card">
+              <div class="adv-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+              </div>
+              <div class="adv-card-title">5 способов оплаты</div>
+              <p class="adv-card-text">Вы можете оплатить покупку наличными, картой, онлайн на сайте, через интернет-банкинг или в кредит от «Сбербанка».</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="adv-card">
+              <div class="adv-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <div class="adv-card-title">Полная документация и гарантия 1 год</div>
+              <p class="adv-card-text">При покупке вам выдается кассовый чек, товарный чек и гарантийный талон — эти документы дают право на гарантийное обслуживание.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="adv-card">
+              <div class="adv-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              </div>
+              <div class="adv-card-title">Отправка заказа день в день</div>
+              <p class="adv-card-text">Отправляем заказы по всей России день в день или забирайте товар самостоятельно в магазинах в Москве, Санкт-Петербурге и Краснодаре.</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="adv-card">
+              <div class="adv-icon-box">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+              </div>
+              <div class="adv-card-title">Рассрочка без переплат</div>
+              <p class="adv-card-text">В нашем магазине можно приобрести любой товар в рассрочку. <a href="#" style="color: var(--color-brand);">Подробнее про условия рассрочки</a></p>
+            </div>
+
+            <!-- Card 6 - Special with Image -->
+            <div class="adv-card special">
+              <div class="adv-special-content">
+                <div class="adv-card-title">Больше в каталоге</div>
+                <a href="#" class="adv-special-link">
+                  Перейти 
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+              <div class="adv-special-image">
+                <img src="src/image/scooter.png" alt="Scooter">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- VIDEO BLOCK - Desktop Only -->
+      <div class="video-block">
+        <div class="container">
+          <div class="video-block-inner" id="videoTrigger">
+            
+            <!-- Preview Image -->
+            <img src="src/image/vid.png" alt="Video Preview">
+            
+            <!-- Play Button -->
+            <div class="video-play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"></polygon></svg>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="reviews-photos-block">
+        <div class="container">
+          <div class="reviews-header">
+            <h2 class="reviews-title">ОТЗЫВЫ И ФОТО РЕАЛЬНЫХ ПОКУПАТЕЛЕЙ</h2>
+            <a href="#" class="reviews-yandex-link">
+              Читать отзывы на Яндекс 
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+          <div class="reviews-grid">
+            <!-- Photo 1 -->
+            <div class="review-card standard">
+              <img src="src/image/otzyv8.png" alt="Customer photo">
+            </div>
+
+            <!-- Photo 2 -->
+            <div class="review-card standard">
+              <img src="src/image/otzyv7.png" alt="Customer photo">
+            </div>
+
+            <!-- Photo 3 -->
+            <div class="review-card standard">
+              <img src="src/image/otzyv2.png" alt="Customer photo">
+            </div>
+
+            <!-- Photo 4 -->
+            <div class="review-card standard">
+              <img src="src/image/otzyv6.png" alt="Customer photo">
+            </div>
+
+            <!-- Photo 5 -->
+            <div class="review-card medium">
+              <img src="src/image/otzyv5.png" alt="Customer photo">
+            </div>
+
+            <!-- Photo 6 -->
+            <div class="review-card standard">
+              <img src="src/image/otzyv4.png" alt="Store photo">
+            </div>
+
+            <!-- Photo 7 -->
+            <div class="review-card standard">
+              <img src="src/image/otzyv1.png" alt="Scooter photo">
+            </div>
+
+            <!-- Photo 8 -->
+            <div class="review-card standard">
+              <img src="src/image/otzyv3.png" alt="Customer photo">
+            </div>
+
+            <!-- Photo 9 -->
+            <div class="review-card standard">
+              <img src="src/image/otzyv2.png" alt="Store photo">
+            </div>
+
+            <!-- Photo 10 -->
+            <div class="review-card standard">
+              <img src="src/image/otzyv1.png" alt="Customer photo">
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <!-- VIDEO REVIEWS - Desktop Only -->
+      <div class="video-reviews-block">
+        <div class="container">
+          
+          <!-- Header -->
+          <div class="video-reviews-header">
+            <div class="video-reviews-header-left">
+              <h2>ВИДЕООБЗОРЫ</h2>
+              <p>Узнайте больше о самокатах Kugoo и посмотрите сравнительные обзоры разных моделей на нашем YouTube-канале.</p>
+            </div>
+            <a href="#" class="video-reviews-link">
+              Смотреть все видеообзоры
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+          </div>
+
+          <!-- Content -->
+          <div class="video-reviews-layout">
+            
+            <!-- LEFT: Big Video -->
+            <div class="video-big-wrap">
+              <div class="video-thumb">
+                <img src="src/image/vidotz3.png" alt="Big Video">
+                <div class="play-circle">
+                  <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
+                </div>
+              </div>
+              <div class="video-title">Крутой и городской? Обзор Kugoo XS Plus</div>
+            </div>
+
+            <!-- RIGHT: Small Videos + Slider Arrow -->
+            <div class="video-small-group">
+              
+              <!-- Small Video 1 -->
+              <div class="video-small-wrap">
+                <div class="video-thumb">
+                  <img src="src/image/vidotz2.png" alt="Small Video 1">
+                  <div class="play-circle">
+                    <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-title">Крутой и городской? Обзор Kugoo XS Plus</div>
+              </div>
+
+              <!-- Slider Arrow (Between Cards) -->
+              <button class="video-slider-arrow">
+                <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+
+              <!-- Small Video 2 -->
+              <div class="video-small-wrap">
+                <div class="video-thumb">
+                  <img src="src/image/vidotz1.png" alt="Small Video 2">
+                  <div class="play-circle">
+                    <svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"></polygon></svg>
+                  </div>
+                </div>
+                <div class="video-title">Крутой и городской? Обзор Kugoo XS Plus</div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- BLOG ARTICLES SECTION -->
+      <div class="blog-section">
+        <div class="container">
+          <div class="blog-header">
+            <h2 class="blog-title">НОВЫЕ СТАТЬИ В БЛОГЕ</h2>
+          </div>
+
+          <div class="blog-slider-wrapper">
+            <div class="blog-slider">
+              
+              <!-- Card 1 -->
+              <article class="blog-card">
+                <div class="blog-card-image">
+                  <img src="src/image/st4.png" alt="How to charge">
+                </div>
+                <div class="blog-card-content">
+                  <h3 class="blog-card-title">Как правильно заряжать электросамокат</h3>
+                  <p class="blog-card-excerpt">
+                    Один из первых вопросов, который волнует после покупки электросамоката.
+                  </p>
+                  <div class="blog-card-meta">
+                    <div class="meta-item">
+                      <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                      01.09.2021
+                    </div>
+                    <div class="meta-item">
+                      <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                      53
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 2 -->
+              <article class="blog-card">
+                <div class="blog-card-image">
+                  <img src="src/image/st3.png" alt="Two scooters">
+                </div>
+                <div class="blog-card-content">
+                  <h3 class="blog-card-title">Как правильно заряжать электросамокат</h3>
+                  <p class="blog-card-excerpt">
+                    Один из первых вопросов, который волнует после покупки электросамоката.
+                  </p>
+                  <div class="blog-card-meta">
+                    <div class="meta-item">
+                      <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                      01.09.2021
+                    </div>
+                    <div class="meta-item">
+                      <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                      53
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 3 -->
+              <article class="blog-card">
+                <div class="blog-card-image">
+                  <img src="src/image/st1.png" alt="White scooter">
+                </div>
+                <div class="blog-card-content">
+                  <h3 class="blog-card-title">Как правильно заряжать электросамокат</h3>
+                  <p class="blog-card-excerpt">
+                    Один из первых вопросов, который волнует после покупки электросамоката.
+                  </p>
+                  <div class="blog-card-meta">
+                    <div class="meta-item">
+                      <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                      01.09.2021
+                    </div>
+                    <div class="meta-item">
+                      <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                      53
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- Card 4 -->
+              <article class="blog-card">
+                <div class="blog-card-image">
+                  <img src="src/image/st1.png" alt="Scooter closeup">
+                </div>
+                <div class="blog-card-content">
+                  <h3 class="blog-card-title">Как правильно заряжать электросамокат</h3>
+                  <p class="blog-card-excerpt">
+                    Один из первых вопросов, который волнует после покупки электросамоката.
+                  </p>
+                  <div class="blog-card-meta">
+                    <div class="meta-item">
+                      <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                      01.09.2021
+                    </div>
+                    <div class="meta-item">
+                      <svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                      53
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+            </div>
+
+            <!-- Navigation Arrow (STUB - ЗАГЛУШКА) -->
+            <button class="blog-nav-btn" disabled>
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FAQ SECTION -->
+      <div class="faq-section">
+        <div class="container">
+          <h2 class="faq-title">ОТВЕЧАЕМ НА ВОПРОСЫ<br>ПОКУПАТЕЛЕЙ</h2>
+          
+          <!-- Question 1 -->
+          <details class="faq-item">
+            <summary>Есть ли гарантия того, что придет именно то, что было заказано? А если я оплачу и товар не придет?</summary>
+            <div class="faq-answer">
+              <p>
+                Мы работаем официально и предоставляем все необходимые документы при покупке. Каждый заказ сопровождается кассовым чеком, товарным чеком и гарантийным талоном. Вы можете быть уверены в том, что получите именно тот товар, который заказали.
+              </p>
+            </div>
+          </details>
+
+          <!-- Question 2 -->
+          <details class="faq-item">
+            <summary>У меня в городе самокаты Kugoo дешевле. Почему?</summary>
+            <div class="faq-answer">
+              <p>
+                На рынке существует множество поставщиков, однако не все они являются официальными дилерами. Мы предоставляем оригинальную продукцию с полной гарантией и сервисным обслуживанием. Низкие цены у других продавцов могут быть связаны с отсутствием гарантии или использованием восстановленных устройств.
+              </p>
+            </div>
+          </details>
+
+          <!-- Question 3 (Open by default) -->
+          <details class="faq-item" open>
+            <summary>Как осуществляется сервисное обслуживание в моем городе? Где гарантия, что меня обслужат?</summary>
+            <div class="faq-answer">
+              <p>
+                При покупке электросамоката у нас, вам выдается кассовый чек, товарный чек и гарантийный талон — эти документы дают право на гарантийное обслуживание на законодательном уровне.
+              </p>
+              <p>
+                Наши сервисные центры находятся в Москве, Санкт-Петербурге и Краснодаре. В случае поломки вы можете обратиться туда.
+              </p>
+              <p>
+                Если вы живете в городе, где нет нашего сервисного центра, то наш специалист поможет решить вопрос удаленно. Он сможет понять какая запчасть вышла из строя и отправит ее вам, если вы сможете сами заменить ее. Если удаленно решить вопрос не удастся, специалист создаст трек номер и попросит вас отправить самокат транспортной компанией CDEK. Транспортировку Товара (с ремонта/на ремонт) Покупатель оплачивает самостоятельно или осуществляет доставку Товара до СЦ своими силами и за свой счет.
+              </p>
+              <p>
+                В соответствии со ст. 20 ФЗ «О защите прав потребителей» на ремонт по гарантии дается не более 45 дней. В городах, где есть наш сервисный центр ремонт проводится за 3-7 дней.
+              </p>
+            </div>
+          </details>
+
+          <!-- Question 4 -->
+          <details class="faq-item">
+            <summary>Где находятся пункты самовывоза в моем городе?</summary>
+            <div class="faq-answer">
+              <p>
+                Наши пункты самовывоза расположены в Москве, Санкт-Петербурге и Краснодаре. Для уточнения адреса ближайшего пункта свяжитесь с нашим менеджером по телефону или через форму обратной связи на сайте.
+              </p>
+            </div>
+          </details>
+
+          <!-- Question 5 -->
+          <details class="faq-item">
+            <summary>Какие способы оплаты вы принимаете?</summary>
+            <div class="faq-answer">
+              <p>
+                Мы принимаем оплату наличными при самовывозе, банковскими картами (Visa, MasterCard, МИР), а также через онлайн-банкинг. Доступна рассрочка от наших партнеров на срок от 3 до 12 месяцев без переплат.
+              </p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      
+      <!-- 1. NEWSLETTER BLOCK -->
+      <div class="footer-newsletter">
+        <div class="container">
+          <div class="newsletter-inner">
+            <div class="newsletter-text">
+              Оставьте свою почту и станьте первым, кто получит скидку на новые самокаты
+            </div>
+            <form class="newsletter-form" action="#" method="POST">
+              <input type="email" class="newsletter-input" placeholder="Введите Ваш email" required>
+              <button type="submit" class="newsletter-btn">Подписаться</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        
+        <!-- === DESKTOP VERSION === -->
+        <div class="footer-main">
+          <div class="footer-columns-grid">
+            
+            <!-- Col 1: Catalog -->
+            <div class="footer-col">
+              <h4>Каталог товаров</h4>
+              <ul>
+                <li><a href="#">Электросамокаты</a></li>
+                <li><a href="#">Электроскутеры</a></li>
+                <li><a href="#">Электровелосипеды</a></li>
+                <li><a href="#">Робот-пылесосы</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 2: Buyers -->
+            <div class="footer-col">
+              <h4>Покупателям</h4>
+              <ul>
+                <li><a href="#">Сервисный центр</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Рассрочка</a></li>
+                <li><a href="#">Тест-драйв</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 3: Contacts -->
+            <div class="footer-col request-call-wrapper">
+              <a href="#" class="request-call-link">Заказать звонок</a>
+              <h4 style="margin-bottom: 25px;">Контакты</h4>
+              
+              <div class="contacts-grid">
+                <div class="contact-item">
+                  <label>Call-центр</label>
+                  <a href="tel:+78005055461"><strong>+7 (800) 505-54-61</strong></a>
+                  <small>Пн-Вс 10:00 - 20:00</small>
+                </div>
+                <div class="contact-item">
+                  <label>Сервисный центр</label>
+                  <a href="tel:+74993507692"><strong>+7 (499) 350-76-92</strong></a>
+                  <small>Пн-Вс 10:00 - 20:00</small>
+                </div>
+              </div>
+
+              <div class="stores-grid">
+                <div class="store-item">
+                  <h5>Магазин в Москве</h5>
+                  <p>ул. Ткацкая, 5 стр. 16</p>
+                  <p style="margin-top: 5px;">+7 (499) 406 15 87</p>
+                </div>
+                <div class="store-item">
+                  <h5>Магазин в Санкт-Петербурге</h5>
+                  <p>ул. Фрунзе, 2</p>
+                  <p style="margin-top: 5px;">+7 (499) 406 15 87</p>
+                </div>
+                <div class="store-item">
+                  <h5>Магазин в Краснодаре</h5>
+                  <p>ул. Восточно-Кругликовская, 86</p>
+                  <p style="margin-top: 5px;">+7 (800) 505 54 61</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Desktop Bottom Row (Logo, Apps, Socials) -->
+          <div class="footer-bottom-desktop">
+            <div class="footer-logo">KUGOO</div>
+            
+            <!-- App Store Placeholders -->
+            <div class="footer-apps">
+              <div class="app-badge-placeholder">
+                <img src="src/icons/playmarket.png" alt="Google Play">
+              </div>
+              <div class="app-badge-placeholder">
+                <img src="src/icons/appstore.png" alt="App Store">
+              </div>
+            </div>
+
+            <!-- Socials Desktop -->
+            <div class="footer-socials">
+              <a href="#" class="social-card">
+                <div class="social-icon-placeholder"><img src="src/icons/vk-cv.png" alt="VK"></div>
+                <div class="social-info"><span class="social-name">ВКонтакте</span><span class="social-count">3 300</span></div>
+              </a>
+              <a href="#" class="social-card">
+                <div class="social-icon-placeholder"><img src="src/icons/instagram-cv.png" alt="Inst"></div>
+                <div class="social-info"><span class="social-name">Instagram</span><span class="social-count">10 602</span></div>
+              </a>
+              <a href="#" class="social-card">
+                <div class="social-icon-placeholder"><img src="src/icons/youtube-cv.png" alt="YT"></div>
+                <div class="social-info"><span class="social-name">YouTube</span><span class="social-count">3 603</span></div>
+              </a>
+              <a href="#" class="social-card">
+                <div class="social-icon-placeholder"><img src="src/icons/telegram-cv.png" alt="TG"></div>
+                <div class="social-info"><span class="social-name">Telegram</span><span class="social-count">432</span></div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- === MOBILE/TABLET VERSION === -->
+        <div class="footer-mobile-content">
+          <!-- Social Grid Mobile -->
+          <div class="mobile-social-grid">
+            <a href="#" class="social-card">
+              <div class="social-icon-placeholder"><img src="src/icons/vk-cv.png" alt="VK"></div>
+              <div class="social-info"><span class="social-name">ВКонтакте</span><span class="social-count">3 300</span></div>
+            </a>
+            <a href="#" class="social-card">
+              <div class="social-icon-placeholder"><img src="src/icons/instagram-cv.png" alt="Inst"></div>
+              <div class="social-info"><span class="social-name">Instagram</span><span class="social-count">10 602</span></div>
+            </a>
+            <a href="#" class="social-card">
+              <div class="social-icon-placeholder"><img src="src/icons/youtube-cv.png" alt="YT"></div>
+              <div class="social-info"><span class="social-name">YouTube</span><span class="social-count">3 603</span></div>
+            </a>
+            <a href="#" class="social-card">
+              <div class="social-icon-placeholder"><img src="src/icons/telegram-cv.png" alt="TG"></div>
+              <div class="social-info"><span class="social-name">Telegram</span><span class="social-count">432</span></div>
+            </a>
+          </div>
+          
+          <!-- Legal Mobile -->
+          <div class="legal-bar-mobile">
+            <a href="#">Реквизиты</a>
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- === DESKTOP FOOTER STRIP === -->
+      <div class="container">
+        <div class="footer-strip">
+          <div class="legal-links">
+            <a href="#">Реквизиты</a>
+            <a href="#">Политика конфиденциальности</a>
+          </div>
+          
+          <!-- Payment Icons Placeholders -->
+          <div class="payments-icons">
+            <div class="payment-icon"><img src="src/icons/applepay.png" alt="GPay"></div>
+            <div class="payment-icon"><img src="src/icons/visa.png" alt="Apple"></div>
+            <div class="payment-icon"><img src="src/icons/googlepay.png" alt="Visa"></div>
+            <div class="payment-icon"><img src="src/icons/wmoney.png" alt="MC"></div>
+            <div class="payment-icon"><img src="src/icons/qiwy.png" alt="QIWI"></div>
+          </div>
+
+          <!-- Online Chat Icons -->
+          <div class="online-chat-block">
+            <span>Online chat:</span>
+            <div class="online-chat-icons">
+              <div class="chat-icon"><img src="src/icons/viber.png" alt="WA"></div>
+              <div class="chat-icon"><img src="src/icons/whatsapp.png" alt="TG"></div>
+              <div class="chat-icon"><img src="src/icons/telegram.png" alt="VK"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+  </body>
+</html>
