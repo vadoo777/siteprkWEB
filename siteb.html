@@ -1,0 +1,1520 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KUGOO - Купить самокаты</title>
+<!-- Подключение Bootstrap 5 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="siteb.css">
+</head>
+<body>
+
+<!-- App Banner (Mobile/Tablet Only) -->
+<div class="app-banner">
+  <div class="container">
+    <!-- Bootstrap Row для выравнивания -->
+    <div class="row align-items-center justify-content-between banner-inner">
+      <div class="col-auto">
+        <div class="banner-left d-flex align-items-center gap-3">
+          <div class="app-icon-placeholder"><img src="src/icons/logo.png" alt="App Icon"></div>
+          <div class="banner-text d-flex flex-column">
+            <div class="banner-title">Открыть в приложении</div>
+            <div class="banner-stats d-flex align-items-center gap-1">
+              <span class="stars">★★★★★</span>
+              <span class="stats-count">2K</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-auto"><button class="banner-btn">Открыть</button></div>
+    </div>
+  </div>
+</div>
+
+<input type="checkbox" id="menu-toggle" class="menu-checkbox" hidden>
+<header>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="row align-items-center justify-content-between top-bar-inner">
+        <div class="col-auto">
+          <nav class="top-links d-flex gap-4">
+            <a href="#">Сервис</a>
+            <a href="#">Сотрудничество</a>
+            <a href="#">Заказать звонок</a>
+          </nav>
+        </div>
+        <div class="col-auto">
+          <div class="top-right d-flex align-items-center gap-4">
+            <div class="social-icons d-flex gap-3">
+              <a href="#"><img src="src/icons/telegram.png" alt="Telegram"></a>
+              <a href="#"><img src="src/icons/whatsapp.png" alt="Whatsapp"></a>
+              <a href="#"><img src="src/icons/viber.png" alt="Viber"></a>
+            </div>
+            <div class="phone-wrapper phone-dropdown-trigger d-flex align-items-center gap-2">
+              <span>+7 (800) 505-54-61</span>
+              <div class="plus-circle d-flex align-items-center justify-content-center">
+                <img src="src/icons/plus.png" alt="Plus">
+              </div>
+              <div class="contact-dropdown">
+                <div class="contact-section">
+                  <div class="contact-label">Сервисный центр</div>
+                  <div class="contact-phone">+ 7 (499) 350 76 92</div>
+                </div>
+                <div class="contact-section">
+                  <div class="contact-label">Оптовый отдел</div>
+                  <div class="contact-phone">+ 7 (499) 281-64-52</div>
+                  <div class="contact-hours">пн-сб 10:00 - 19:00</div>
+                </div>
+                <div class="contact-section">
+                  <div class="contact-label">Отдел рекламаций и претензий</div>
+                  <div class="contact-phone">+ 7 (499) 350-76-92</div>
+                  <div class="contact-hours">ср-вс 10:00 до 19:00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle Bar -->
+  <div class="container">
+    <!-- Bootstrap Grid для хедера -->
+    <div class="row align-items-center middle-bar">
+      <div class="col-auto"><div class="logo">KUGOO</div></div>
+      <div class="col-auto d-none d-lg-block">
+        <div class="catalog-wrapper position-relative">
+          <button class="catalog-btn d-flex align-items-center gap-2">
+            <img src="src/icons/burger.png" alt="Catalog">
+            <span>Каталог</span>
+          </button>
+          <div class="megamenu">
+            <div class="megamenu-inner d-flex gap-5">
+              <div class="megamenu-left">
+                <a href="#" class="megamenu-category active d-flex align-items-center gap-3"><img src="src/icons/electric-scooter.png" alt="">Электросамокаты</a>
+                <a href="#" class="megamenu-category d-flex align-items-center gap-3"><img src="src/icons/scooter-2.png" alt="">Электроскутеры</a>
+                <a href="#" class="megamenu-category d-flex align-items-center gap-3"><img src="src/icons/mountain-bike.png" alt="">Электровелосипеды</a>
+                <a href="#" class="megamenu-category d-flex align-items-center gap-3"><img src="src/icons/vacuum-cleaner.png" alt="">Робот-пылесосы</a>
+                <a href="#" class="megamenu-category d-flex align-items-center gap-3"><img src="src/icons/weighing-scale.png" alt="">Весы</a>
+              </div>
+              <div class="megamenu-content d-flex gap-5 flex-grow-1">
+                <div class="megamenu-col">
+                  <h4>Особенности</h4>
+                  <ul class="d-flex flex-column gap-2"><li><a href="#">Внедорожный</a></li><li><a href="#">Городской</a></li><li><a href="#">Зимний</a></li><li><a href="#">С сиденьем</a></li><li><a href="#">Без сиденья</a></li></ul>
+                </div>
+                <div class="megamenu-col">
+                  <h4>Для кого</h4>
+                  <ul class="d-flex flex-column gap-2"><li><a href="#">Для детей и подростков</a></li><li><a href="#">Для взрослых</a></li><li><a href="#">Для пенсионеров</a></li></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Поиск растягивается на свободное место (col) -->
+      <div class="col d-none d-lg-block">
+        <div class="search-field d-flex align-items-center">
+          <div class="search-select d-flex align-items-center gap-2"><span>Везде</span><img src="src/icons/down.png" alt="Select"></div>
+          <input type="text" placeholder="Искать самокат KUGOO" class="search-input">
+          <button class="search-submit d-flex align-items-center justify-content-center"><img src="src/icons/search.png" alt="Search"></button>
+        </div>
+      </div>
+      <div class="col-auto d-none d-lg-flex">
+       <!-- USER ICONS WITH TOOLTIPS -->
+<div class="user-icons desktop-only d-flex align-items-center gap-4">
+  
+  <!-- Compare Icon -->
+  <a href="#" class="icon-button d-flex flex-column align-items-center" 
+     data-bs-toggle="tooltip" 
+     data-bs-placement="bottom" 
+     title="Список сравнения">
+    <img src="src/icons/vesy.png" alt="Compare">
+  </a>
+
+  <!-- Wishlist Icon -->
+  <a href="#" class="icon-button d-flex flex-column align-items-center" 
+     data-bs-toggle="tooltip" 
+     data-bs-placement="bottom" 
+     title="Избранное">
+    <img src="src/icons/heart.png" alt="Wishlist">
+  </a>
+
+  <!-- Cart Icon -->
+  <a href="#" class="icon-button d-flex align-items-center gap-2 position-relative" 
+     data-bs-toggle="tooltip" 
+     data-bs-placement="bottom" 
+     title="Корзина">
+    <div class="position-relative">
+      <img src="src/icons/shopping-cart.png" alt="Cart">
+      <span class="cart-count">0</span>
+    </div>
+    <span class="cart-label d-none d-lg-inline">Корзина</span>
+  </a>
+
+</div>
+      </div>
+      <!-- Мобильная версия хедера -->
+      <div class="col-12 d-lg-none">
+        <div class="mobile-row d-flex align-items-center justify-content-end gap-4">
+          <a href="#" class="mobile-phone"><img src="src/icons/call-mob.png" alt="Call"></a>
+          <label for="menu-toggle" class="burger-trigger">
+            <span class="burger-lines d-flex flex-column justify-content-between gap-1"><span></span><span></span><span></span></span>
+            <span class="close-icon"><img src="src/icons/close-mob.png" alt="Close"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Мобильный поиск -->
+  <div class="container mobile-search py-2 d-lg-none">
+    <div class="row"><div class="col-12">
+      <div class="search-field d-flex align-items-center">
+        <input type="text" placeholder="Искать самокат KUGOO" class="search-input">
+        <button class="search-submit d-flex align-items-center justify-content-center"><img src="src/icons/search-mob.png" alt="Search"></button>
+      </div>
+    </div></div>
+  </div>
+
+  <!-- Мобильное меню -->
+  <div class="mobile-menu-overlay">
+    <div class="container">
+      <div class="row"><div class="col-12">
+        <div class="menu-nav d-flex flex-column">
+          <a href="#" class="menu-item d-flex align-items-center justify-content-center"> О магазине</a>
+          <a href="#" class="menu-item menu-item-with-badge d-flex flex-column align-items-center justify-content-center gap-2"><span>Доставка и оплата</span><span class="tag-badge">Доступна рассрочка</span></a>
+          <a href="#" class="menu-item d-flex align-items-center justify-content-center">Тест-драйв</a>
+          <a href="#" class="menu-item d-flex align-items-center justify-content-center">Блог</a>
+          <a href="#" class="menu-item d-flex align-items-center justify-content-center">Контакты</a>
+          <a href="#" class="menu-item menu-item-promo d-flex align-items-center justify-content-center gap-2"><span>Акции</span><span class="percent d-flex align-items-center justify-content-center">%</span></a>
+        </div>
+        <div class="footer-social-row d-flex justify-content-center gap-4 py-4">
+          <a href="#"><img src="src/icons/telegram-mob.png" alt="Tg"></a>
+          <a href="#"><img src="src/icons/whatsapp-mob.png" alt="Wa"></a>
+          <a href="#"><img src="src/icons/viber-mob.png" alt="Vb"></a>
+        </div>
+      </div></div>
+    </div>
+  </div>
+
+  <!-- Нижнее меню (Desktop) -->
+  <nav class="bottom-nav desktop-only">
+    <div class="container">
+      <div class="row"><div class="col-12">
+        <div class="nav-scroll d-flex gap-4 overflow-x-auto">
+          <a href="#" class="nav-link d-flex align-items-center gap-2"> О магазине</a>
+          <a href="#" class="nav-link d-flex align-items-center gap-2"><span>Доставка и оплата</span><span class="tag-badge">Доступна рассрочка</span></a>
+          <a href="#" class="nav-link d-flex align-items-center gap-2">Тест-драйв</a>
+          <a href="#" class="nav-link d-flex align-items-center gap-2">Блог</a>
+          <a href="#" class="nav-link d-flex align-items-center gap-2">Контакты</a>
+          <a href="#" class="nav-link d-flex align-items-center gap-2"><span>Акции</span><span class="percent d-flex align-items-center justify-content-center">%</span></a>
+        </div>
+      </div></div>
+    </div>
+  </nav>
+</header>
+
+<main class="container hero-section">
+  <!-- Hero Slider -->
+  <div class="row g-0">
+    <div class="col-12">
+      <div class="hero-slider position-relative overflow-hidden">
+        <div class="hero-bg-text">KIRIN</div>
+        <div class="hero-slide d-flex align-items-center position-relative z-2">
+          <div class="hero-content position-relative z-5">
+            <span class="badge-new d-inline-block">Новинка</span>
+            <h1 class="hero-title">Электросамокаты KUGOO KIRIN<br>от официального дилера</h1>
+            <p class="hero-subtitle">с бесплатной доставкой по РФ от 1 дня</p>
+            <a href="#" class="btn-primary d-inline-block">Перейти в каталог</a>
+          </div>
+          <div class="hero-image-wrap position-absolute">
+            <img src="src/image/samokat.png" alt="Kugoo Kirin Scooter" class="hero-scooter-img">
+            <div class="test-drive-tag position-absolute d-flex align-items-center">
+              <div class="tag-inner d-flex align-items-center gap-2">
+                <img src="src/icons/molnia.png" alt="L" class="lightning-icon">
+                <span>Тест-драйв и обучение</span>
+                <span class="badge-free">Бесплатно</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-nav desktop-only position-absolute bottom-0 start-0 d-flex align-items-center gap-4 px-4 pb-3">
+            <button class="nav-arrow d-flex align-items-center justify-content-center"><img src="src/icons/levo.png" alt="<"></button>
+            <div class="nav-info d-flex align-items-center gap-2"><span class="current">1</span><span class="separator">—</span><span class="total">5</span></div>
+            <button class="nav-arrow d-flex align-items-center justify-content-center"><img src="src/icons/pravo.png" alt=">"></button>
+          </div>
+          <div class="mobile-pagination position-absolute bottom-0 start-50 translate-middle-x d-none d-lg-flex gap-2 mb-3">
+            <span class="slider-dot active"></span><span class="slider-dot"></span><span class="slider-dot"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Grid (Bootstrap Row) -->
+  <div class="row g-3 features-grid mb-5">
+    <div class="col-6 col-md-3"><div class="feature-card"><h3>Гарантия 1 год</h3><p>на весь ассортимент</p></div></div>
+    <div class="col-6 col-md-3"><div class="feature-card"><h3>Рассрочка</h3><p>от 6 месяцев</p></div></div>
+    <div class="col-6 col-md-3"><div class="feature-card"><h3>Подарки</h3><p>и бонусы к покупкам</p></div></div>
+    <div class="col-6 col-md-3"><div class="yandex-card d-flex align-items-center justify-content-between">
+      <div class="y-logo d-flex align-items-center justify-content-center"><img src="src/icons/yandex.png" alt="Я"></div>
+      <div class="y-info d-flex flex-column align-items-start gap-1"><span class="y-label">Яндекс отзывы</span><div class="y-rating d-flex align-items-center gap-1"><span class="star">★</span><span class="val">4,9</span></div></div>
+    </div></div>
+  </div>
+
+  <!-- Products Section -->
+  <div class="product-grid-section py-4">
+    <div class="container px-0">
+      <div class="row align-items-center justify-content-between mb-4 section-header">
+        <div class="col-auto"><h2 class="section-title mb-0">ЭЛЕКТРОСАМОКАТЫ</h2></div>
+        <div class="col-auto"><div class="section-filters d-flex gap-2 flex-wrap">
+          <button class="filter-btn active">Хиты продаж</button><button class="filter-btn">Для города</button><button class="filter-btn">Для взрослых</button><button class="filter-btn">Для детей</button>
+        </div></div>
+      </div>
+      
+      <!-- Сетка товаров: 4 колонки на десктопе, 2 на планшете, 1 на мобильном -->
+      <div class="row g-4 product-grid mb-5">
+        <!-- Карточка 1 -->
+        <div class="col-12 col-sm-6 col-lg-3"><div class="product-card h-100">
+          <div class="card-image-wrap d-flex align-items-center justify-content-center">
+            <div class="badge hit">Хит</div>
+            <button class="compare-btn position-absolute"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg></button>
+            <button class="card-nav-arrow prev d-flex align-items-center justify-content-center">&lt;</button>
+            <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+            <button class="card-nav-arrow next d-flex align-items-center justify-content-center">&gt;</button>
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <h3 class="card-title mb-2">Kugoo Kirin M4</h3>
+            <div class="card-specs d-grid mb-3">
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+            <!-- Bootstrap Progress Bar for Battery -->
+<div class="battery-level mt-2">
+  <div class="d-flex justify-content-between mb-1">
+    <span class="small text-muted">Заряд батареи</span>
+    <span class="small fw-bold">85%</span>
+  </div>
+  <div class="progress" style="height: 6px; border-radius: 3px;">
+    <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+  </div>
+</div>
+            </div>
+            <div class="price-row d-flex justify-content-between align-items-end mb-3">
+              <div class="price-block d-flex flex-column"><span class="old-price d-block">39 900 ₽</span><span class="new-price d-block">29 900 ₽</span></div>
+              <div class="action-buttons d-flex gap-2">
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <button class="btn-buy-1click w-100">Купить в 1 клик</button>
+          </div>
+        </div></div>
+        
+        <!-- Карточка 2 -->
+        <div class="col-12 col-sm-6 col-lg-3"><div class="product-card h-100">
+          <div class="card-image-wrap d-flex align-items-center justify-content-center">
+            <div class="badge new">Новинка</div>
+            <button class="compare-btn position-absolute"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg></button>
+            <button class="card-nav-arrow prev d-flex align-items-center justify-content-center">&lt;</button>
+            <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+            <button class="card-nav-arrow next d-flex align-items-center justify-content-center">&gt;</button>
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <h3 class="card-title mb-2">Kugoo Kirin M4</h3>
+            <div class="card-specs d-grid mb-3">
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+            </div>
+            <div class="price-row d-flex justify-content-between align-items-end mb-3">
+              <div class="price-block d-flex flex-column"><span class="old-price d-block">39 900 ₽</span><span class="new-price d-block">29 900 ₽</span></div>
+              <div class="action-buttons d-flex gap-2">
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+           <!-- Добавили id="buyBtn1" для удобства -->
+<button class="btn-buy-1click w-100" id="buyBtn1" type="button">
+  <span class="btn-text">Купить в 1 клик</span>
+  <!-- Спиннер скрыт по умолчанию -->
+  <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+</button>
+          </div>
+        </div></div>
+        
+        <!-- Карточка 3 -->
+        <div class="col-12 col-sm-6 col-lg-3"><div class="product-card h-100">
+          <div class="card-image-wrap d-flex align-items-center justify-content-center">
+            <div class="badge hit">Хит</div>
+            <button class="compare-btn position-absolute"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg></button>
+            <button class="card-nav-arrow prev d-flex align-items-center justify-content-center">&lt;</button>
+            <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+            <button class="card-nav-arrow next d-flex align-items-center justify-content-center">&gt;</button>
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <h3 class="card-title mb-2">Kugoo Kirin M4</h3>
+            <div class="card-specs d-grid mb-3">
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+            </div>
+            <div class="price-row d-flex justify-content-between align-items-end mb-3">
+              <div class="price-block d-flex flex-column"><span class="old-price d-block">39 900 ₽</span><span class="new-price d-block">29 900 ₽</span></div>
+              <div class="action-buttons d-flex gap-2">
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <button class="btn-buy-1click w-100">Купить в 1 клик</button>
+          </div>
+        </div></div>
+        
+        <!-- Карточка 4 -->
+        <div class="col-12 col-sm-6 col-lg-3"><div class="product-card h-100">
+          <div class="card-image-wrap d-flex align-items-center justify-content-center">
+            <div class="badge new">Новинка</div>
+            <button class="compare-btn position-absolute"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg></button>
+            <button class="card-nav-arrow prev d-flex align-items-center justify-content-center">&lt;</button>
+            <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+            <button class="card-nav-arrow next d-flex align-items-center justify-content-center">&gt;</button>
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <h3 class="card-title mb-2">Kugoo Kirin M4</h3>
+            <div class="card-specs d-grid mb-3">
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+            </div>
+            <div class="price-row d-flex justify-content-between align-items-end mb-3">
+              <div class="price-block d-flex flex-column"><span class="old-price d-block">39 900 ₽</span><span class="new-price d-block">29 900 ₽</span></div>
+              <div class="action-buttons d-flex gap-2">
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <button class="btn-buy-1click w-100">Купить в 1 клик</button>
+          </div>
+        </div></div>
+         <div class="col-12 col-sm-6 col-lg-3"><div class="product-card h-100">
+          <div class="card-image-wrap d-flex align-items-center justify-content-center">
+            <div class="badge new">Новинка</div>
+            <button class="compare-btn position-absolute"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg></button>
+            <button class="card-nav-arrow prev d-flex align-items-center justify-content-center">&lt;</button>
+            <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+            <button class="card-nav-arrow next d-flex align-items-center justify-content-center">&gt;</button>
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <h3 class="card-title mb-2">Kugoo Kirin M4</h3>
+            <div class="card-specs d-grid mb-3">
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+            </div>
+            <div class="price-row d-flex justify-content-between align-items-end mb-3">
+              <div class="price-block d-flex flex-column"><span class="old-price d-block">39 900 ₽</span><span class="new-price d-block">29 900 ₽</span></div>
+              <div class="action-buttons d-flex gap-2">
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <button class="btn-buy-1click w-100">Купить в 1 клик</button>
+          </div>
+        </div></div>
+         <div class="col-12 col-sm-6 col-lg-3"><div class="product-card h-100">
+          <div class="card-image-wrap d-flex align-items-center justify-content-center">
+            <div class="badge new">Новинка</div>
+            <button class="compare-btn position-absolute"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg></button>
+            <button class="card-nav-arrow prev d-flex align-items-center justify-content-center">&lt;</button>
+            <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+            <button class="card-nav-arrow next d-flex align-items-center justify-content-center">&gt;</button>
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <h3 class="card-title mb-2">Kugoo Kirin M4</h3>
+            <div class="card-specs d-grid mb-3">
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+            </div>
+            <div class="price-row d-flex justify-content-between align-items-end mb-3">
+              <div class="price-block d-flex flex-column"><span class="old-price d-block">39 900 ₽</span><span class="new-price d-block">29 900 ₽</span></div>
+              <div class="action-buttons d-flex gap-2">
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <button class="btn-buy-1click w-100">Купить в 1 клик</button>
+          </div>
+        </div></div>
+         <div class="col-12 col-sm-6 col-lg-3"><div class="product-card h-100">
+          <div class="card-image-wrap d-flex align-items-center justify-content-center">
+            <div class="badge new">Новинка</div>
+            <button class="compare-btn position-absolute"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg></button>
+            <button class="card-nav-arrow prev d-flex align-items-center justify-content-center">&lt;</button>
+            <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+            <button class="card-nav-arrow next d-flex align-items-center justify-content-center">&gt;</button>
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <h3 class="card-title mb-2">Kugoo Kirin M4</h3>
+            <div class="card-specs d-grid mb-3">
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+            </div>
+            <div class="price-row d-flex justify-content-between align-items-end mb-3">
+              <div class="price-block d-flex flex-column"><span class="old-price d-block">39 900 ₽</span><span class="new-price d-block">29 900 ₽</span></div>
+              <div class="action-buttons d-flex gap-2">
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <button class="btn-buy-1click w-100">Купить в 1 клик</button>
+          </div>
+        </div></div>
+         <div class="col-12 col-sm-6 col-lg-3"><div class="product-card h-100">
+          <div class="card-image-wrap d-flex align-items-center justify-content-center">
+            <div class="badge hit">Хит</div>
+            <button class="compare-btn position-absolute"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M12 22v-8.3a4 4 0 0 0-1.172-2.872L3 3"/><path d="m15 9 6-6"/></svg></button>
+            <button class="card-nav-arrow prev d-flex align-items-center justify-content-center">&lt;</button>
+            <img src="src/image/kart.png" alt="Kugoo Kirin M4">
+            <button class="card-nav-arrow next d-flex align-items-center justify-content-center">&gt;</button>
+          </div>
+          <div class="card-body d-flex flex-column p-3">
+            <h3 class="card-title mb-2">Kugoo Kirin M4</h3>
+            <div class="card-specs d-grid mb-3">
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="6" width="18" height="12" rx="2" ry="2"/><line x1="23" y1="13" x2="23" y2="11"/></svg> 2000 mAh</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg> 1,2 л.с.</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 60 км/ч</div>
+              <div class="spec-item d-flex align-items-center gap-2"><svg class="spec-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> 5 часов</div>
+            </div>
+            <div class="price-row d-flex justify-content-between align-items-end mb-3">
+              <div class="price-block d-flex flex-column"><span class="old-price d-block">39 900 ₽</span><span class="new-price d-block">29 900 ₽</span></div>
+              <div class="action-buttons d-flex gap-2">
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button>
+                <button class="circle-btn d-flex align-items-center justify-content-center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></button>
+              </div>
+            </div>
+            <button class="btn-buy-1click w-100">Купить в 1 клик</button>
+          </div>
+        </div></div>
+      </div>
+      
+      <div class="text-center show-more-wrapper"><button class="btn-show-all d-inline-block">Смотреть все</button></div>
+    </div>
+  </div>
+
+  <!-- INFO CARDS (Desktop Only) -->
+  <div class="info-cards-section py-4">
+    <div class="container px-0">
+      <div class="row g-4 info-cards-wrapper">
+        <div class="col-12 col-lg-6"><div class="info-card position-relative d-flex flex-column justify-content-center">
+          <div class="info-card-content position-relative"><h3 class="info-card-title">ПОДБОР МОДЕЛИ ЭЛЕКТРОСАМОКАТА</h3><p class="info-card-desc">Пройдите тест и выберите электросамокат по своим критериям</p><a href="#" class="info-card-link d-inline-flex align-items-center gap-2">Подобрать модель &rarr;</a></div>
+          <div class="info-card-shape position-absolute"></div>
+          <div class="info-card-image position-absolute d-flex align-items-center justify-content-end"><img src="src/image/koleso.png" alt="Scooter Wheel"></div>
+        </div></div>
+        <div class="col-12 col-lg-6"><div class="info-card position-relative d-flex flex-column justify-content-center">
+          <div class="info-card-content position-relative"><h3 class="info-card-title">СЕРВИСНОЕ ОБСЛУЖИВАНИЕ</h3><p class="info-card-desc">Крупнейший сервисный центр в России для продуктов Kugoo</p><a href="#" class="info-card-link d-inline-flex align-items-center gap-2">Подробнее &rarr;</a></div>
+          <div class="info-card-shape position-absolute"></div>
+          <div class="info-card-image position-absolute d-flex align-items-center justify-content-end"><img src="src/image/woman.png" alt="Service Woman"></div>
+        </div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROMO BANNER -->
+  <div class="promo-banner-block mb-5">
+    <div class="container px-0">
+      <div class="row align-items-center g-0 promo-banner-inner">
+        <div class="col-12 col-lg-6 d-flex align-items-center justify-content-end"><div class="promo-banner-image"><img src="src/image/dron.png" alt="Promo Drone"></div></div>
+        <div class="col-12 col-lg-6 d-flex align-items-start"><div class="promo-banner-content d-flex flex-column align-items-start text-white gap-4">
+          <div class="promo-badge">Акция</div>
+          <h2 class="promo-title mb-0">БЕСПЛАТНАЯ ДОСТАВКА<br>ЭЛЕКТРОСАМОКАТОВ<br>ПО РОССИИ ДО 01.09</h2>
+          <button class="promo-btn">Подробнее</button>
+        </div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POPULAR CATEGORIES -->
+ 
+      <!-- Сетка категорий -->
+      <!-- POPULAR CATEGORIES - Desktop Only -->
+<div class="popular-categories-block py-5">
+  <div class="container">
+    <div class="row align-items-start justify-content-between mb-4">
+      <div class="col-auto">
+        <h2 class="popular-categories-title mb-0">ПОПУЛЯРНЫЕ КАТЕГОРИИ</h2>
+      </div>
+      <div class="col-auto">
+        <div class="manager-card d-flex align-items-center gap-3 p-3 rounded-3">
+          <div class="manager-avatar rounded-2 overflow-hidden">
+            <img src="src/icons/baba.png" alt="Manager">
+          </div>
+          <div class="manager-info d-flex flex-column">
+            <div class="manager-text small">Менеджер ответит на любой ваш вопрос о продуктах Kugoo</div>
+            <div class="manager-link small text-primary">Задать вопрос</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Categories Grid: 4 columns -->
+    <div class="row g-3 categories-grid mb-4">
+      <!-- Card 1 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="category-card position-relative overflow-hidden">
+          <img src="src/image/pylesos.png" alt="Робот-пылесосы" class="w-100">
+          <div class="category-overlay position-absolute bottom-0 w-100">
+            <div class="category-name">Робот-пылесосы</div>
+            <div class="category-price">от 29 900 ₽</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 2 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="category-card position-relative overflow-hidden">
+          <img src="src/image/velosiped.png" alt="Электровелосипеды" class="w-100">
+          <div class="category-overlay position-absolute bottom-0 w-100">
+            <div class="category-name">Электровелосипеды</div>
+            <div class="category-price">от 29 900 ₽</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 3 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="category-card position-relative overflow-hidden">
+          <img src="src/image/vesys.png" alt="Весы" class="w-100">
+          <div class="category-overlay position-absolute bottom-0 w-100">
+            <div class="category-name">Весы</div>
+            <div class="category-price">от 29 900 ₽</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 4 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="category-card position-relative overflow-hidden">
+          <img src="src/image/pylesos.png" alt="Робот-пылесосы" class="w-100">
+          <div class="category-overlay position-absolute bottom-0 w-100">
+            <div class="category-name">Робот-пылесосы</div>
+            <div class="category-price">от 29 900 ₽</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 5 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="category-card position-relative overflow-hidden">
+          <img src="src/image/velosiped.png" alt="Весы" class="w-100">
+          <div class="category-overlay position-absolute bottom-0 w-100">
+            <div class="category-name">Весы</div>
+            <div class="category-price">от 29 900 ₽</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 6 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="category-card position-relative overflow-hidden">
+          <img src="src/image/pylesos.png" alt="Робот-пылесосы" class="w-100">
+          <div class="category-overlay position-absolute bottom-0 w-100">
+            <div class="category-name">Робот-пылесосы</div>
+            <div class="category-price">от 29 900 ₽</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 7 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="category-card position-relative overflow-hidden">
+          <img src="src/image/velosiped.png" alt="Электровелосипеды" class="w-100">
+          <div class="category-overlay position-absolute bottom-0 w-100">
+            <div class="category-name">Электровелосипеды</div>
+            <div class="category-price">от 29 900 ₽</div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Card 8 -->
+      <div class="col-6 col-md-4 col-lg-3">
+        <div class="category-card position-relative overflow-hidden">
+          <img src="src/image/vesys.png" alt="Весы" class="w-100">
+          <div class="category-overlay position-absolute bottom-0 w-100">
+            <div class="category-name">Весы</div>
+            <div class="category-price">от 29 900 ₽</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="text-center">
+      <button class="show-all-btn d-block mx-auto">Смотреть все</button>
+    </div>
+  </div>
+</div>
+     
+
+  <!-- DEALER INFO -->
+  <div class="dealer-section py-4">
+    <div class="container">
+      <div class="row g-4 align-items-stretch dealer-inner">
+        <div class="col-12 col-lg-6"><div class="dealer-image-wrapper position-relative h-100 rounded-4 overflow-hidden">
+          <img src="src/image/ludi.png" alt="People on Scooter" class="w-100 h-100 object-fit-cover">
+          <div class="dealer-overlay-card position-absolute">
+            <div class="overlay-title">Тест-драйв в Москве</div>
+            <div class="overlay-text">Оцените все преимущества самокатов лично</div>
+            <a href="#" class="overlay-btn d-flex align-items-center gap-2">Подробнее<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+          </div>
+        </div></div>
+        <div class="col-12 col-lg-6 d-flex flex-column justify-content-center dealer-content">
+          <h2 class="dealer-title">KUGOO-RUSSIA — ПЕРВЫЙ ОФИЦИАЛЬНЫЙ ДИЛЕР KUGOO KIRIN В РОССИИ</h2>
+          <p class="dealer-description">Наша цель предоставить полный ассортимент современной продукции Kugoo Kirin, которая улучшает и упрощает жизнь. Стремимся подарить комфорт и эмоции, поэтому помогаем с выбором и внимательно относимся к сервисному обслуживанию.</p>
+          <div class="benefits-box mt-auto">
+            <div class="benefits-header">Специализируемся исключительно на бренде Kugoo, поэтому вы получите:</div>
+            <ul class="benefits-list list-unstyled d-flex flex-column gap-2">
+              <li class="d-flex align-items-start gap-2"><span class="bullet-arrow">◄</span> цены от завода-изготовителя Jilong</li>
+              <li class="d-flex align-items-start gap-2"><span class="bullet-arrow">◄</span> бесплатный тест-драйв самокатов</li>
+              <li class="d-flex align-items-start gap-2"><span class="bullet-arrow">◄</span> фирменную гарантию 1 год</li>
+              <li class="d-flex align-items-start gap-2"><span class="bullet-arrow">◄</span> ремонт и обслуживание от 1 дня в собственном сервисном центре</li>
+              <li class="d-flex align-items-start gap-2"><span class="bullet-arrow">◄</span> более 1 000 запчастей и аксессуаров в наличии</li>
+            </ul>
+            <a href="#" class="certificate-link d-inline-block mt-3">Смотреть сертификат</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ADVANTAGES SECTION -->
+<div class="advantages-section py-5">
+  <div class="container">
+    <div class="advantages-header text-center mb-5">
+      <h2 class="advantages-title mb-3">Предлагаем самые выгодные цены<br>на продукты Kugoo за счет прямых поставок</h2>
+      <p class="advantages-subtitle mb-4">и заботимся об удобстве покупателей</p>
+      
+      <!-- Tabs Navigation -->
+      <ul class="nav nav-pills advantages-tabs justify-content-center" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link adv-tab-btn active" id="pills-shop-tab" data-bs-toggle="pill" data-bs-target="#pills-shop" type="button" role="tab" aria-controls="pills-shop" aria-selected="true">Интернет-магазин</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link adv-tab-btn" id="pills-service-tab" data-bs-toggle="pill" data-bs-target="#pills-service" type="button" role="tab" aria-controls="pills-service" aria-selected="false">Сервисный центр</button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Tabs Content -->
+    <div class="tab-content" id="pills-tabContent">
+      
+      <!-- Tab 1: Internet Shop -->
+      <div class="tab-pane fade show active" id="pills-shop" role="tabpanel" aria-labelledby="pills-shop-tab">
+        <div class="row g-4"> <!-- g-4 задает отступы между колонками -->
+          
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="adv-card h-100">
+              <div class="adv-icon-box mb-3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+              </div>
+              <div class="adv-card-title mb-2">X товаров в каталоге</div>
+              <p class="adv-card-text small">Выбирайте товар, который подходит по цене и характеристикам. Если товара нет в наличии — мы сообщим вам о его поступлении.</p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="adv-card h-100">
+              <div class="adv-icon-box mb-3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg>
+              </div>
+              <div class="adv-card-title mb-2">5 способов оплаты</div>
+              <p class="adv-card-text small">Вы можете оплатить покупку наличными, картой, онлайн на сайте, через интернет-банкинг или в кредит от «Сбербанка».</p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="adv-card h-100">
+              <div class="adv-icon-box mb-3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+              </div>
+              <div class="adv-card-title mb-2">Полная документация и гарантия 1 год</div>
+              <p class="adv-card-text small">При покупке вам выдается кассовый чек, товарный чек и гарантийный талон — эти документы дают право на гарантийное обслуживание.</p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="adv-card h-100">
+              <div class="adv-icon-box mb-3">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+              </div>
+              <div class="adv-card-title mb-2">Отправка заказа день в день</div>
+              <p class="adv-card-text small">Отправляем заказы по всей России день в день или забирайте товар самостоятельно в магазинах в Москве, Санкт-Петербурге и Краснодаре.</p>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+<div class="col-12 col-md-6 col-lg-4">
+  <div class="adv-card h-100">
+    <div class="adv-icon-box mb-3">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+    </div>
+    <div class="adv-card-title mb-2">Рассрочка без переплат</div>
+    <p class="adv-card-text small">
+      В нашем магазине можно приобрести любой товар в рассрочку. 
+      
+      <!-- ВСТАВЛЯЕМ КНОПКУ СЮДА -->
+      <button type="button" class="btn btn-sm btn-outline-secondary rounded-pill ms-1" 
+              data-bs-toggle="popover" 
+              title="Условия рассрочки" 
+              data-bs-content="Оплата частями без переплат: 0-0-6 месяцев. Первый взнос от 0 руб. Требуется только паспорт."
+              data-bs-trigger="focus"
+              style="border-color: var(--color-brand); color: var(--color-brand); font-size: 11px; padding: 2px 8px;">
+         Подробнее
+      </button>
+    </p>
+  </div>
+</div>
+          <!-- Card 6 - Special -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="adv-card special h-100">
+              <div class="adv-special-content">
+                <div class="adv-card-title mb-2">Больше в каталоге</div>
+                <a href="#" class="adv-special-link d-inline-flex align-items-center gap-2 mt-2" style="color: var(--color-brand); text-decoration: none;">
+                  Перейти 
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+              <div class="adv-special-image">
+                <img src="src/image/scooter.png" alt="Scooter" class="img-fluid">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Tab 2: Service Center (Empty for now as requested) -->
+      <div class="tab-pane fade" id="pills-service" role="tabpanel" aria-labelledby="pills-service-tab">
+        <div class="text-center py-5 text-muted">
+          <h4>Информация о сервисном центре</h4>
+          <p>Здесь будет размещена информация о наших сервисных центрах.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+  <!-- VIDEO BLOCK -->
+ <div class="video-block">
+        <div class="container">
+          <div class="video-block-inner" id="videoTrigger">
+            
+            <!-- Preview Image -->
+            <img src="src/image/vid.png" alt="Video Preview">
+            
+            <!-- Play Button -->
+            <div class="video-play-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"></polygon></svg>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+<!-- REVIEWS & PHOTOS BLOCK -->
+<div class="reviews-photos-block">
+  <div class="container">
+    <div class="reviews-header">
+      <h2 class="reviews-title">ОТЗЫВЫ И ФОТО РЕАЛЬНЫХ ПОКУПАТЕЛЕЙ</h2>
+      <a href="#" class="reviews-yandex-link">
+        Читать отзывы на Яндекс
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+    <div class="reviews-grid">
+      <!-- Row 1 -->
+      <div class="review-item"><img src="src/image/otzyv8.png" alt="Customer photo"></div>
+      <div class="review-item"><img src="src/image/otzyv7.png" alt="Customer photo"></div>
+      <div class="review-item blur-on-hover"><img src="src/image/otzyv2.png" alt="Customer photo"></div>
+      <div class="review-item"><img src="src/image/otzyv6.png" alt="Customer photo"></div>
+      <div class="review-item"><img src="src/image/otzyv5.png" alt="Customer photo"></div>
+      <!-- Row 2 -->
+      <div class="review-item"><img src="src/image/otzyv4.png" alt="Store photo"></div>
+      <div class="review-item"><img src="src/image/otzyv1.png" alt="Scooter photo"></div>
+      <div class="review-item"><img src="src/image/otzyv3.png" alt="Customer photo"></div>
+      <div class="review-item"><img src="src/image/otzyv2.png" alt="Store photo"></div>
+      <div class="review-item"><img src="src/image/otzyv1.png" alt="Customer photo"></div>
+    </div>
+  </div>
+</div>
+
+<!-- VIDEO REVIEWS BLOCK - Bootstrap 5 -->
+<!-- VIDEO REVIEWS BLOCK -->
+<div class="video-reviews-block">
+  <div class="container">
+    <!-- Header -->
+    <div class="row justify-content-between align-items-start mb-4">
+      <div class="col-12 col-lg-7">
+        <h2 class="video-title-main mb-2">ВИДЕООБЗОРЫ</h2>
+        <p class="video-description text-muted mb-0">Узнайте больше о самокатах Kugoo и посмотрите сравнительные обзоры разных моделей на нашем YouTube-канале.</p>
+      </div>
+      <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+        <a href="#" class="video-link d-inline-flex align-items-center gap-2 text-primary text-decoration-none fw-semibold">
+          Смотреть все видеообзоры
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Content: Big Video Left + Small Videos Right -->
+    <div class="row g-4 align-items-start">
+      <!-- Left: Big Video -->
+      <div class="col-12 col-lg-7">
+        <div class="video-thumb-big position-relative rounded-4 overflow-hidden bg-light">
+          <img src="src/image/vidotz3.png" alt="Big Video" class="w-100 d-block">
+          <div class="play-circle-big position-absolute top-50 start-50 translate-middle bg-white rounded-circle d-flex align-items-center justify-content-center">
+            <svg viewBox="0 0 24 24" width="28" height="28"><polygon points="5,3 19,12 5,21" fill="#6F73EE"></polygon></svg>
+          </div>
+        </div>
+        <div class="video-title mt-3 fw-semibold">Крутой и городской? Обзор Kugoo XS Plus</div>
+      </div>
+
+     <!-- RIGHT: Small Videos + Slider Arrow -->
+<div class="video-small-group d-flex align-items-center gap-3 flex-grow-1">
+  <!-- Small Video 1 -->
+  <div class="video-small-wrap flex-fill">
+    <div class="video-thumb position-relative rounded-4 overflow-hidden bg-light">
+      <img src="src/image/vidotz2.png" alt="Small Video 1" class="w-100 d-block">
+      <div class="play-circle position-absolute top-50 start-50 translate-middle bg-white rounded-circle d-flex align-items-center justify-content-center">
+        <svg viewBox="0 0 24 24" width="20" height="20"><polygon points="5,3 19,12 5,21" fill="#6F73EE"></polygon></svg>
+      </div>
+    </div>
+    <div class="video-title mt-2 fw-semibold small">Крутой и городской? Обзор Kugoo XS Plus</div>
+  </div>
+
+  <!-- Slider Arrow (Centered) -->
+  <button class="video-slider-arrow bg-primary text-white rounded-circle border-0 d-flex align-items-center justify-content-center flex-shrink-0">
+    <svg viewBox="0 0 24 24" width="20" height="20"><polyline points="9 18 15 12 9 6" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline></svg>
+  </button>
+
+  <!-- Small Video 2 -->
+  <div class="video-small-wrap flex-fill">
+    <div class="video-thumb position-relative rounded-4 overflow-hidden bg-light">
+      <img src="src/image/vidotz1.png" alt="Small Video 2" class="w-100 d-block">
+      <div class="play-circle position-absolute top-50 start-50 translate-middle bg-white rounded-circle d-flex align-items-center justify-content-center">
+        <svg viewBox="0 0 24 24" width="20" height="20"><polygon points="5,3 19,12 5,21" fill="#6F73EE"></polygon></svg>
+      </div>
+    </div>
+    <div class="video-title mt-2 fw-semibold small">Крутой и городской? Обзор Kugoo XS Plus</div>
+  </div>
+</div>
+
+  <!-- BLOG ARTICLES -->
+  <!-- BLOG ARTICLES SECTION (Bootstrap Carousel) -->
+<div class="blog-section">
+  <div class="container">
+    <div class="blog-header">
+      <h2 class="blog-title">НОВЫЕ СТАТЬИ В БЛОГЕ</h2>
+    </div>
+
+    <!-- Bootstrap Carousel Wrapper -->
+    <div id="blogCarousel" class="carousel slide" data-bs-ride="false" data-bs-interval="false">
+      
+      <div class="carousel-inner">
+        <!-- SLIDE 1 (Active) -->
+        <div class="carousel-item active">
+          <div class="row g-4">
+            <!-- Card 1 -->
+            <div class="col-6 col-lg-3">
+              <article class="blog-card h-100">
+                <div class="blog-card-image">
+                  <img src="src/image/st4.png" alt="How to charge">
+                </div>
+                <div class="blog-card-content">
+                  <h3 class="blog-card-title">Как правильно заряжать электросамокат</h3>
+                  <p class="blog-card-excerpt">Один из первых вопросов, который волнует после покупки электросамоката.</p>
+                  <div class="blog-card-meta">
+                    <div class="meta-item"><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>01.09.2021</div>
+                    <div class="meta-item"><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>53</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-6 col-lg-3">
+              <article class="blog-card h-100">
+                <div class="blog-card-image"><img src="src/image/st3.png" alt="Two scooters"></div>
+                <div class="blog-card-content">
+                  <h3 class="blog-card-title">Как правильно заряжать электросамокат</h3>
+                  <p class="blog-card-excerpt">Один из первых вопросов, который волнует после покупки электросамоката.</p>
+                  <div class="blog-card-meta">
+                    <div class="meta-item"><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>01.09.2021</div>
+                    <div class="meta-item"><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>53</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-6 col-lg-3">
+              <article class="blog-card h-100">
+                <div class="blog-card-image"><img src="src/image/st1.png" alt="White scooter"></div>
+                <div class="blog-card-content">
+                  <h3 class="blog-card-title">Как правильно заряжать электросамокат</h3>
+                  <p class="blog-card-excerpt">Один из первых вопросов, который волнует после покупки электросамоката.</p>
+                  <div class="blog-card-meta">
+                    <div class="meta-item"><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>01.09.2021</div>
+                    <div class="meta-item"><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>53</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <!-- Card 4 -->
+            <div class="col-6 col-lg-3">
+              <article class="blog-card h-100">
+                <div class="blog-card-image"><img src="src/image/st1.png" alt="Scooter closeup"></div>
+                <div class="blog-card-content">
+                  <h3 class="blog-card-title">Как правильно заряжать электросамокат</h3>
+                  <p class="blog-card-excerpt">Один из первых вопросов, который волнует после покупки электросамоката.</p>
+                  <div class="blog-card-meta">
+                    <div class="meta-item"><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>01.09.2021</div>
+                    <div class="meta-item"><svg class="meta-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>53</div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <!-- SLIDE 2 (Следующий слайд - дубликат для примера) -->
+        <div class="carousel-item">
+          <div class="row g-4">
+            <!-- Те же 4 карточки (или новые) -->
+            <div class="col-6 col-lg-3"><article class="blog-card h-100"><div class="blog-card-image"><img src="src/image/st4.png" alt="How to charge"></div><div class="blog-card-content"><h3 class="blog-card-title">Как правильно заряжать электросамокат</h3><p class="blog-card-excerpt">Один из первых вопросов...</p><div class="blog-card-meta"><div class="meta-item">01.09.2021</div></div></div></article></div>
+            <div class="col-6 col-lg-3"><article class="blog-card h-100"><div class="blog-card-image"><img src="src/image/st3.png" alt="Two scooters"></div><div class="blog-card-content"><h3 class="blog-card-title">Как правильно заряжать электросамокат</h3><p class="blog-card-excerpt">Один из первых вопросов...</p><div class="blog-card-meta"><div class="meta-item">01.09.2021</div></div></div></article></div>
+            <div class="col-6 col-lg-3"><article class="blog-card h-100"><div class="blog-card-image"><img src="src/image/st1.png" alt="White scooter"></div><div class="blog-card-content"><h3 class="blog-card-title">Как правильно заряжать электросамокат</h3><p class="blog-card-excerpt">Один из первых вопросов...</p><div class="blog-card-meta"><div class="meta-item">01.09.2021</div></div></div></article></div>
+            <div class="col-6 col-lg-3"><article class="blog-card h-100"><div class="blog-card-image"><img src="src/image/st1.png" alt="Scooter closeup"></div><div class="blog-card-content"><h3 class="blog-card-title">Как правильно заряжать электросамокат</h3><p class="blog-card-excerpt">Один из первых вопросов...</p><div class="blog-card-meta"><div class="meta-item">01.09.2021</div></div></div></article></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Custom Navigation Button (The Blue Arrow) -->
+      <button class="carousel-control-next" type="button" data-bs-target="#blogCarousel" data-bs-slide="next">
+        <span class="custom-next-arrow" aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</div>
+
+  <!-- Аккардион -->
+ <!-- FAQ SECTION -->
+<div class="faq-section py-5 mx-auto" style="max-width: 900px;">
+  <h2 class="faq-title text-center mb-5 fw-bold text-uppercase">ОТВЕЧАЕМ НА ВОПРОСЫ<br>ПОКУПАТЕЛЕЙ</h2>
+  <div class="accordion" id="faqAccordion">
+    
+    <!-- Item 1 -->
+    <div class="accordion-item faq-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button collapsed faq-trigger fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+          Есть ли гарантия того, что придет именно то, что было заказано? А если я оплачу и товар не придет?
+        </button>
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+          Мы работаем официально и предоставляем все необходимые документы при покупке. Каждый заказ сопровождается кассовым чеком, товарным чеком и гарантийным талоном. Вы можете быть уверены в том, что получите именно тот товар, который заказали.
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="accordion-item faq-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed faq-trigger fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+          У меня в городе самокаты Kugoo дешевле. Почему?
+        </button>
+      </h2>
+      <div id="faq2" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+          На рынке существует множество поставщиков, однако не все они являются официальными дилерами. Мы предоставляем оригинальную продукцию с полной гарантией и сервисным обслуживанием. Низкие цены у других продавцов могут быть связаны с отсутствием гарантии или использованием восстановленных устройств.
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 3 (Open by default) -->
+    <div class="accordion-item faq-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button faq-trigger fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="true" aria-controls="faq3">
+          Как осуществляется сервисное обслуживание в моем городе? Где гарантия, что меня обслужат?
+        </button>
+      </h2>
+      <div id="faq3" class="accordion-collapse collapse show" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+          <p>При покупке электросамоката у нас, вам выдается кассовый чек, товарный чек и гарантийный талон — эти документы дают право на гарантийное обслуживание на законодательном уровне.</p>
+          <p>Наши сервисные центры находятся в Москве, Санкт-Петербурге и Краснодаре. В случае поломки вы можете обратиться туда.</p>
+          <p>Если вы живете в городе, где нет нашего сервисного центра, то наш специалист поможет решить вопрос удаленно. Он сможет понять какая запчасть вышла из строя и отправит ее вам, если вы сможете сами заменить ее. Если удаленно решить вопрос не удастся, специалист создаст трек номер и попросит вас отправить самокат транспортной компанией CDEK. Транспортировку Товара (с ремонта/на ремонт) Покупатель оплачивает самостоятельно или осуществляет доставку Товара до СЦ своими силами и за свой счет.</p>
+          <p>В соответствии со ст. 20 ФЗ «О защите прав потребителей» на ремонт по гарантии дается не более 45 дней. В городах, где есть наш сервисный центр ремонт проводится за 3-7 дней.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="accordion-item faq-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed faq-trigger fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+          Где находятся пункты самовывоза в моем городе?
+        </button>
+      </h2>
+      <div id="faq4" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+          Наши пункты самовывоза расположены в Москве, Санкт-Петербурге и Краснодаре. Для уточнения адреса ближайшего пункта свяжитесь с нашим менеджером по телефону или через форму обратной связи на сайте.
+        </div>
+      </div>
+    </div>
+
+    <!-- Item 5 -->
+    <div class="accordion-item faq-item">
+      <h2 class="accordion-header" id="headingFive">
+        <button class="accordion-button collapsed faq-trigger fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+          Какие способы оплаты вы принимаете?
+        </button>
+      </h2>
+      <div id="faq5" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+        <div class="accordion-body faq-answer">
+          Мы принимаем оплату наличными при самовывозе, банковскими картами (Visa, MasterCard, МИР), а также через онлайн-банкинг. Доступна рассрочка от наших партнеров на срок от 3 до 12 месяцев без переплат.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</main>
+
+<footer class="site-footer">
+  <!-- 1. NEWSLETTER BLOCK (Фиолетовый фон) -->
+  <div class="footer-newsletter">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Текст слева -->
+        <div class="col-lg-5 mb-3 mb-lg-0">
+          <div class="newsletter-text text-white fw-bold text-uppercase lh-base">
+            Оставьте свою почту и станьте первым, кто получит скидку на новые самокаты
+          </div>
+        </div>
+        <!-- Форма справа -->
+        <div class="col-lg-7">
+          <form class="newsletter-form d-flex gap-3" action="#" method="POST">
+            <input type="email" class="newsletter-input flex-grow-1" placeholder="Введите Ваш email" required>
+            <button type="submit" class="newsletter-btn">Подписаться</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. FOOTER MAIN (Светло-серый фон) -->
+  <div class="footer-main">
+    <div class="container">
+      <div class="row g-4">
+        
+        <!-- Col 1: Каталог -->
+        <div class="col-6 col-lg-3">
+          <h4 class="footer-title mb-3">Каталог товаров</h4>
+          <ul class="list-unstyled footer-links">
+            <li class="mb-2"><a href="#">Электросамокаты</a></li>
+            <li class="mb-2"><a href="#">Электроскутеры</a></li>
+            <li class="mb-2"><a href="#">Электровелосипеды</a></li>
+            <li class="mb-2"><a href="#">Робот-пылесосы</a></li>
+          </ul>
+        </div>
+        
+        <!-- Col 2: Покупателям (внутри разбито на 2 колонки) -->
+        <div class="col-6 col-lg-3">
+          <h4 class="footer-title mb-3">Покупателям</h4>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled footer-links">
+                <li class="mb-2"><a href="#">Сервисный центр</a></li>
+                <li class="mb-2"><a href="#">Доставка и оплата</a></li>
+                <li class="mb-2"><a href="#">Рассрочка</a></li>
+                <li class="mb-2"><a href="#">Тест-драйв</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled footer-links">
+                <li class="mb-2"><a href="#">Блог</a></li>
+                <li class="mb-2"><a href="#">Сотрудничество</a></li>
+                <li class="mb-2"><a href="#">Контакты</a></li>
+                <li class="mb-2"><a href="#">Акции</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Col 3: Контакты (Занимает остальное место) -->
+        <div class="col-12 col-lg-6">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <h4 class="footer-title mb-0">Контакты</h4>
+            
+          </div>
+          
+          <div class="row g-4">
+            <!-- Телефоны -->
+            <div class="col-6 col-xl-4">
+              <div class="contact-block">
+                <div class="contact-label small text-muted">Call-центр</div>
+                <a href="tel:+78005055461" class="contact-phone d-block text-decoration-none fw-bold mb-1">+7 (800) 505-54-61</a>
+                <div class="contact-hours small text-muted">Пн-Вс 10:00 - 20:00</div>
+              </div>
+            </div>
+            <div class="col-6 col-xl-4">
+              <div class="contact-block">
+                <div class="contact-label small text-muted">Сервисный центр</div>
+                <a href="tel:+74993507692" class="contact-phone d-block text-decoration-none fw-bold mb-1">+7 (499) 350-76-92</a>
+                <div class="contact-hours small text-muted">Пн-Вс 10:00 - 20:00</div>
+              </div>
+            </div>
+            
+            <!-- Магазины -->
+            <div class="col-12 col-xl-4">
+              <div class="store-block mb-3">
+                <div class="store-title fw-bold small">Магазин в Москве</div>
+                <div class="store-address small text-muted">ул. Ткацкая, 5 стр. 16</div>
+                <div class="store-phone small text-muted">+7 (499) 406 15 87</div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-4">
+              <div class="store-block mb-3">
+                <div class="store-title fw-bold small">Магазин в Санкт-Петербурге</div>
+                <div class="store-address small text-muted">ул. Фрунзе, 2</div>
+                <div class="store-phone small text-muted">+7 (499) 406 15 87</div>
+              </div>
+            </div>
+            <div class="col-12 col-xl-4">
+              <div class="store-block">
+                <div class="store-title fw-bold small">Магазин в Краснодаре</div>
+                <div class="store-address small text-muted">ул. Восточно-Кругликовская, 86</div>
+                <div class="store-phone small text-muted">+7 (800) 505 54 61</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. FOOTER BOTTOM (Лого, Приложения, Соцсети) -->
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <!-- Лого и приложения -->
+        <div class="col-12 col-lg-4">
+          <div class="d-flex align-items-center gap-4 flex-wrap">
+            <div class="footer-logo fw-bold fs-4">KUGOO</div>
+            <div class="app-badges d-flex gap-2">
+              <div class="app-badge">
+                <img src="src/icons/playmarket.png" alt="Google Play" height="40">
+              </div>
+              <div class="app-badge">
+                <img src="src/icons/appstore.png" alt="App Store" height="40">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Социальные сети -->
+        <div class="col-12 col-lg-8">
+          <div class="social-links d-flex gap-3 justify-content-center justify-content-lg-end flex-wrap">
+            <a href="#" class="social-card d-flex align-items-center gap-2 px-3 py-2 bg-white rounded shadow-sm text-decoration-none">
+              <img src="src/icons/vk-cv.png" alt="VK" width="24">
+              <div>
+                <div class="social-name fw-bold small">ВКонтакте</div>
+                <div class="social-count small text-muted">3 300</div>
+              </div>
+            </a>
+            <a href="#" class="social-card d-flex align-items-center gap-2 px-3 py-2 bg-white rounded shadow-sm text-decoration-none">
+              <img src="src/icons/instagram-cv.png" alt="Instagram" width="24">
+              <div>
+                <div class="social-name fw-bold small">Instagram</div>
+                <div class="social-count small text-muted">10 602</div>
+              </div>
+            </a>
+            <a href="#" class="social-card d-flex align-items-center gap-2 px-3 py-2 bg-white rounded shadow-sm text-decoration-none">
+              <img src="src/icons/youtube-cv.png" alt="YouTube" width="24">
+              <div>
+                <div class="social-name fw-bold small">YouTube</div>
+                <div class="social-count small text-muted">3 603</div>
+              </div>
+            </a>
+            <a href="#" class="social-card d-flex align-items-center gap-2 px-3 py-2 bg-white rounded shadow-sm text-decoration-none">
+              <img src="src/icons/telegram-cv.png" alt="Telegram" width="24">
+              <div>
+                <div class="social-name fw-bold small">Telegram</div>
+                <div class="social-count small text-muted">432</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. FOOTER STRIP (Реквизиты, Оплата, Чат) -->
+  <div class="footer-strip">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-12 col-md-4 mb-3 mb-md-0">
+          <div class="legal-links d-flex gap-4 flex-wrap">
+            <a href="#" class="text-decoration-none text-muted small">Реквизиты</a>
+            <a href="#" class="text-decoration-none text-muted small">Политика конфиденциальности</a>
+          </div>
+        </div>
+        <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+          <div class="payment-methods d-flex gap-2 justify-content-center">
+            <img src="src/icons/applepay.png" alt="Apple Pay" height="20">
+            <img src="src/icons/visa.png" alt="Visa" height="20">
+            <img src="src/icons/googlepay.png" alt="Google Pay" height="20">
+            <img src="src/icons/wmoney.png" alt="WebMoney" height="20">
+            <img src="src/icons/qiwy.png" alt="QIWI" height="20">
+          </div>
+        </div>
+        <div class="col-12 col-md-4 text-md-end">
+          <div class="online-chat d-flex align-items-center justify-content-center justify-content-md-end gap-2">
+            <span class="small text-muted">Online chat:</span>
+            <div class="chat-icons d-flex gap-2">
+              <img src="src/icons/viber.png" alt="Viber" width="20">
+              <img src="src/icons/whatsapp.png" alt="WhatsApp" width="20">
+              <img src="src/icons/telegram.png" alt="Telegram" width="20">
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <div class="footer-mobile-content py-4">
+  <!-- Social Grid Mobile (Bootstrap Grid 2x2) -->
+  <div class="row g-3 mobile-social-grid">
+    <div class="col-6">
+      <a href="#" class="social-card d-flex align-items-center justify-content-center gap-2 bg-white px-3 py-3 rounded-2 text-decoration-none shadow-sm">
+        <div class="social-icon-placeholder rounded-circle overflow-hidden">
+          <img src="src/icons/vk-cv.png" alt="VK" class="img-fluid">
+        </div>
+        <div class="social-info text-center">
+          <span class="social-name fw-bold small d-block">ВКонтакте</span>
+          <span class="social-count text-muted small">3 300</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-6">
+      <a href="#" class="social-card d-flex align-items-center justify-content-center gap-2 bg-white px-3 py-3 rounded-2 text-decoration-none shadow-sm">
+        <div class="social-icon-placeholder rounded-circle overflow-hidden">
+          <img src="src/icons/instagram-cv.png" alt="Inst" class="img-fluid">
+        </div>
+        <div class="social-info text-center">
+          <span class="social-name fw-bold small d-block">Instagram</span>
+          <span class="social-count text-muted small">10 602</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-6">
+      <a href="#" class="social-card d-flex align-items-center justify-content-center gap-2 bg-white px-3 py-3 rounded-2 text-decoration-none shadow-sm">
+        <div class="social-icon-placeholder rounded-circle overflow-hidden">
+          <img src="src/icons/youtube-cv.png" alt="YT" class="img-fluid">
+        </div>
+        <div class="social-info text-center">
+          <span class="social-name fw-bold small d-block">YouTube</span>
+          <span class="social-count text-muted small">3 603</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-6">
+      <a href="#" class="social-card d-flex align-items-center justify-content-center gap-2 bg-white px-3 py-3 rounded-2 text-decoration-none shadow-sm">
+        <div class="social-icon-placeholder rounded-circle overflow-hidden">
+          <img src="src/icons/telegram-cv.png" alt="TG" class="img-fluid">
+        </div>
+        <div class="social-info text-center">
+          <span class="social-name fw-bold small d-block">Telegram</span>
+          <span class="social-count text-muted small">432</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  <!-- Legal Mobile -->
+  <div class="legal-bar-mobile text-center mt-4">
+    <a href="#" class="d-block mb-2 text-decoration-none text-muted">Реквизиты</a>
+    <a href="#" class="d-block text-decoration-none text-muted">Политика конфиденциальности</a>
+     <a href="#" data-bs-toggle="modal" data-bs-target="#callModal">Заказать звонок</a>
+  </div>
+</div>
+</footer>
+
+<!-- Модальное окно "Заказать звонок" -->
+<div class="modal fade" id="callModal" tabindex="-1" aria-labelledby="callModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content" style="border-radius: 20px; border: none; padding: 10px;">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold" id="callModalLabel">Заказать звонок</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body pt-2">
+        <p class="text-muted small mb-3">Оставьте ваш номер, и мы перезвоним вам в течение 5 минут.</p>
+        <form>
+          <div class="mb-3">
+            <input type="text" class="form-control rounded-3" placeholder="Ваше имя" style="padding: 12px 15px; border-color: #EAEBED;">
+          </div>
+          <div class="mb-3">
+            <input type="tel" class="form-control rounded-3" placeholder="+7 (999) 000-00-00" style="padding: 12px 15px; border-color: #EAEBED;">
+          </div>
+          <!-- Кнопка отправки с цветом бренда -->
+          <button type="submit" class="btn w-100 py-3 rounded-3 fw-bold text-white" style="background-color: var(--color-brand);">Позвоните мне</button>
+          <p class="text-center text-muted small mt-2 mb-0" style="font-size: 11px;">Нажимая кнопку, вы соглашаетесь с условиями.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- BOOTSTRAP TOAST NOTIFICATION -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1100">
+  <div id="subscribeToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        ✅ Вы успешно подписались на новости KUGOO!
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  // Инициализация Tooltip (Виджет #7)
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+</script>
+<script>
+  // Простой скрипт для показа Toast при клике на кнопку подписки
+  document.querySelector('.newsletter-btn').addEventListener('click', function(e) {
+      e.preventDefault();
+      var toast = new bootstrap.Toast(document.getElementById('liveToast'));
+      toast.show();
+  });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Инициализация Tooltips
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+
+  // Инициализация Popovers (ДОБАВИТЬ ЭТОТ БЛОК)
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+  })
+
+</script>
+<script>
+// Логика для Spinner на кнопке "Купить в 1 клик"
+document.addEventListener('DOMContentLoaded', function() {
+  // Находим все кнопки с классом btn-buy-1click
+  const buyButtons = document.querySelectorAll('.btn-buy-1click');
+
+  buyButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      e.preventDefault(); // Предотвращаем стандартное действие ссылки/формы
+
+      const btnText = this.querySelector('.btn-text');
+      const spinner = this.querySelector('.spinner-border');
+
+      if (btnText && spinner) {
+        // 1. Скрываем текст
+        btnText.classList.add('d-none');
+        
+        // 2. Показываем спиннер
+        spinner.classList.remove('d-none');
+        
+        // 3. Блокируем кнопку, чтобы не нажать дважды
+        this.disabled = true;
+        this.style.opacity = '0.7';
+        this.style.cursor = 'wait';
+
+        // 4. Имитация задержки сервера (2 секунды)
+        setTimeout(() => {
+          // Возвращаем всё как было
+          btnText.classList.remove('d-none');
+          spinner.classList.add('d-none');
+          this.disabled = false;
+          this.style.opacity = '1';
+          this.style.cursor = 'pointer';
+          
+          // Опционально: можно показать Toast об успехе, если он есть
+          // var toast = new bootstrap.Toast(document.getElementById('liveToast'));
+          // toast.show();
+        }, 2000);
+      }
+    });
+  });
+});
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // 1. Инициализация Tooltips
+  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+
+  // 2. Инициализация Popovers
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl)
+  })
+
+  // 3. Логика для Toast (Уведомление подписки)
+  document.addEventListener('DOMContentLoaded', function() {
+    const subscribeBtn = document.querySelector('.newsletter-btn');
+    if (subscribeBtn) {
+      subscribeBtn.addEventListener('click', function(e) {
+        e.preventDefault(); // Предотвращаем перезагрузку страницы
+        
+        // Показываем Toast
+        var toastEl = document.getElementById('subscribeToast');
+        var toast = new bootstrap.Toast(toastEl);
+        toast.show();
+        
+        // Очищаем поле ввода (опционально)
+        const input = document.querySelector('.newsletter-input');
+        if(input) input.value = '';
+      });
+    }
+  });
+</script>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
